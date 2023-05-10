@@ -1,0 +1,286 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+   }
+   .navbar-inverse {
+    margin-top: 2%;
+    background-color: rgb(1, 1, 57);
+    border: none;
+    border-radius: 0;
+    height: 80px;
+   }
+   .navbar-nav {
+    float: right;
+    margin-right: 200px;
+   }
+   #myNavbar {
+    padding-top: 15px;
+   }
+   #myNavbar a {
+    transition-duration: 0.7s;
+    color: white;
+    background-color: rgb(1, 1, 57);
+    margin-left: 70px;
+   }
+   #myNavbar a:hover {
+    border-bottom: 1px solid blue;
+    color: blue;
+   }
+   .navbar-header  {
+    margin-top: 15px;
+    padding-left: 150px;
+   }
+   #brand-image {
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 1, 57);
+    margin-top: -50px;
+   }
+   .communication {
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 15%;
+    height: 1000px;
+    background-color: white;
+ 
+   }
+   #contact {
+    width: 100%;
+    height: 600px;
+   }
+   #contact-img {
+    
+    filter: brightness(12%);
+    -webkit-filter: brightness(12%);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchKdTUS8HldUxhhHImEQZdwHFnVIpK2jvtw&usqp=CAU");
+   }
+   #contact-img, #c2 {
+    width: 50%;
+    float: left;
+   }
+   #c2 {
+    background-color: rgb(1, 1, 57);
+    text-align: center;
+    height: 600px;
+   }
+   #info {
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 5%;
+   }
+
+   #emoji1, #emoji {
+    width: 100%;
+    float: left;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+   }
+   #insta, #fb {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+  
+   }  
+   #insta {
+    margin-left: 20px;
+   }
+   #info-p {
+    text-align: left;
+    font-size: 17px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -5%;
+   }
+
+   #c2-text, #c2-textarea {
+    background-color: rgb(35, 35, 68);
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 8%;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+   }
+   #c2-textarea {
+    height: 100px;
+    resize: none;
+   }
+   #c2-button {
+    margin-top: 20px;
+    width: 150px;
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(35, 35, 68);
+    font-weight: bold;
+   }
+   h4 {
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+   }
+   #location {
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+    border: 0;
+   }
+   .xorhgoi {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(235, 224, 224);
+    margin-top: 10%;
+   
+  }
+  .titlos-xorhgoi {
+    font-size: 250%;
+    text-align: center;
+  }
+  #xor1 {
+    margin-left: 25%;
+  }
+  #xor1, #xor2 {
+    width: 25%;
+    float: left;
+    height: 130px;
+  }
+  #xorhgoi-image {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+  }
+
+  .bottom {
+    width: 100%;
+    background-color: rgb(1, 1, 57);
+    height: 250px;
+  }
+  #b1, #b2, #b3 {
+    width: 33.3%;
+    float: left;
+    color: lightgray;
+     padding: 35px;
+  }
+  #b2 {
+    text-align: center;
+  }
+  #b3 {
+    text-align: right;
+   
+  }
+  #b2-image {
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
+  }
+
+
+
+
+
+
+
+   @media screen and (max-width: 600px) {/*Gia kinhta, mikres o8ones */
+
+    body {
+     width: 100%; 
+     height: 2000;
+     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    .navbar-inverse {
+     width: 100%;
+    }
+    #myNavbar {
+     background-color: rgb(1, 1, 57);
+     margin-top: 0;
+     z-index: 3;
+     position:sticky;
+    }
+    #myNavbar a {
+     border-bottom: 1px solid black;
+     width: 100%;
+     float: left;
+     margin-left: 0;
+     z-index: 2;
+    }
+    .navbar-nav {
+     float: left;
+     margin-right: 0;
+    }
+    .navbar-brand {
+     width: 40%;
+     margin-top: -5px;
+    }
+    #brand-image {
+      width: 60px;
+      margin-top: -5px;
+    }
+    .navbar-header {
+     margin-top: 2px;
+     padding-left: 0;
+    }
+    .communication {
+      width: 98%;
+      margin-left: 1%;
+    }
+    #contact {
+      height: 1000px;
+    }
+    #c2, #contact-img {
+      height: 50%;
+      width: 100%;
+    }
+    #contact-img {
+      z-index: 1;
+    }
+    #info {
+      width: 70%;
+      height: 50%;
+      margin-left: 10%;
+    }
+    #info-p {
+      font-size: 14px;
+    }
+    #location {
+      margin-top: 30px;
+      height: 200px;
+    }
+    .xorhgoi {
+      margin-top: 70%;
+    }
+    .titlos-xorhgoi {
+      font-size: 200%;
+    }
+    .bottom {
+      height: 300px;
+    }
+    #b2 {
+      display: none;
+    }
+    #b1,#b3 {
+      width: 100%;
+      text-align: left;
+      padding: 10px;
+      font-size: 90%;
+    }
+   
+   }

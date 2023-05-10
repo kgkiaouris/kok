@@ -1,0 +1,225 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+   }
+   .navbar-inverse {
+    margin-top: 2%;
+    background-color: rgb(1, 1, 57);
+    border: none;
+    border-radius: 0;
+    height: 80px;
+   }
+   .navbar-nav {
+    float: right;
+    margin-right: 200px;
+   }
+   #myNavbar {
+    padding-top: 15px;
+   }
+   #myNavbar a {
+    transition-duration: 0.7s;
+    color: white;
+    background-color: rgb(1, 1, 57);
+    margin-left: 70px;
+   }
+   #myNavbar a:hover {
+    border-bottom: 1px solid blue;
+    color: blue;
+   }
+   .navbar-header  {
+    margin-top: 15px;
+    padding-left: 150px;
+   }
+   #brand-image {
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 1, 57);
+    margin-top: -50px;
+   }
+   .xorhgoi {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(235, 224, 224);
+    margin-top: 30%;
+   
+  }
+  .titlos-xorhgoi {
+    font-size: 250%;
+    text-align: center;
+  }
+  #xor1 {
+    margin-left: 25%;
+  }
+  #xor1, #xor2 {
+    width: 25%;
+    float: left;
+    height: 130px;
+  }
+  #xorhgoi-image {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+  }
+
+  .bottom {
+    width: 100%;
+    background-color: rgb(1, 1, 57);
+    height: 250px;
+  }
+  #b1, #b2, #b3 {
+    width: 33.3%;
+    float: left;
+    color: lightgray;
+     padding: 35px;
+  }
+  #b2 {
+    text-align: center;
+  }
+  #b3 {
+    text-align: right;
+   
+  }
+  #b2-image {
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .administration {
+    width: 60%;
+    margin-left: 25%;
+    margin-top: 5%;
+    padding: 20px;
+    padding-left: 50px;
+    border-left: 2px solid rgb(1, 1, 57);
+}
+.ok {
+  width:70%;
+  margin-left: 15%;
+  background-color: rgb(248, 255, 253);
+  
+}
+#le {
+  margin-top: 5%;
+  background-color: white;
+  color: rgb(1, 1, 57);
+  width: 20%;
+  margin-left: 4%;
+  border-bottom: 2px solid rgb(1, 1, 57);
+  border-radius: 5px;
+  float: left;
+  height: 130px;
+  text-align: center;
+}
+.admin-text {
+  width: 100%;
+  margin-top: 5%;
+  font-size: 250%;
+  text-align: center;color: rgb(1, 1, 57); 
+}
+h2 {
+  font-size: 180%;
+}
+h5 {
+  font-weight: bold;
+}
+.admin-text {
+width: 100%;
+margin-top: 5%;
+font-size: 250%;
+text-align: center;color: rgb(1, 1, 57);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {/*Gia kinhta, mikres o8ones */
+
+body {
+width: 100%; 
+height: 2000;
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.navbar-inverse {
+width: 100%;
+}
+#myNavbar {
+background-color: rgb(1, 1, 57);
+margin-top: 0;
+z-index: 3;
+position:sticky;
+}
+#myNavbar a {
+border-bottom: 1px solid black;
+width: 100%;
+float: left;
+margin-left: 0;
+z-index: 2;
+}
+.navbar-nav {
+float: left;
+margin-right: 0;
+}
+.navbar-brand {
+width: 40%;
+margin-top: -5px;
+}
+#brand-image {
+width: 60px;
+margin-top: -5px;
+}
+.navbar-header {
+margin-top: 2px;
+padding-left: 0;
+}
+.xorhgoi {
+margin-top: 100%;
+}
+.titlos-xorhgoi {
+font-size: 200%;
+}
+.bottom {
+height: 300px;
+}
+#b2 {
+display: none;
+}
+#b1,#b3 {
+width: 100%;
+text-align: left;
+padding: 10px;
+font-size: 90%;
+}
+.admin-text {
+font-size: 200%;
+}
+
+.ok {
+width: 100%;
+margin-left: 0;
+}
+#le {
+float: left;
+width: 30%;
+margin-left: 13.3%;
+height: 100px;
+}
+h2 {
+font-size: 100%;
+}
+h5 {
+font-size: 80%;
+}
+
+}

@@ -1,0 +1,235 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+   }
+   .navbar-inverse {
+    margin-top: 2%;
+    background-color: rgb(1, 1, 57);
+    border: none;
+    border-radius: 0;
+    height: 80px;
+   }
+   .navbar-nav {
+    float: right;
+    margin-right: 200px;
+   }
+   #myNavbar {
+    padding-top: 15px;
+
+   }
+   #myNavbar a {
+    color: white;
+    background-color: rgb(1, 1, 57);
+    margin-left: 70px;
+    transition-duration: 0.6s;
+   }
+   #myNavbar a:hover {
+    border-bottom: 2px solid blue;
+    color: blue;
+   }
+   .dropdown-menu {
+    background-color: rgb(1, 1, 57);
+    text-align: left;
+   }
+   .navbar-header  {
+    margin-top: 15px;
+    padding-left: 150px;
+   }
+   #brand-image {
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 1, 57);
+    margin-top: -50px;
+   }
+
+
+  .xorhgoi {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(235, 224, 224);
+    margin-top: 10%;
+   
+  }
+  .titlos-xorhgoi {
+    font-size: 250%;
+    text-align: center;
+  }
+  #xor1 {
+    margin-left: 25%;
+  }
+  #xor1, #xor2 {
+    width: 25%;
+    float: left;
+    height: 130px;
+  }
+  #xorhgoi-image {
+    width: 100%;
+    height: 130px;
+    object-fit: contain;
+  }
+
+
+  .bottom {
+    width: 100%;
+    background-color: rgb(1, 1, 57);
+    height: 250px;
+  }
+  #b1, #b2, #b3 {
+    width: 33.3%;
+    float: left;
+    color: lightgray;
+     padding: 35px;
+  }
+  #b2 {
+    text-align: center;
+  }
+  #b3 {
+    text-align: right;
+   
+  }
+  #b2-image {
+    width: 80%;
+    height: 150px;
+    object-fit: contain;
+  }
+
+   .finswimming {
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 5%;
+           
+            height: 800px;
+        }
+        .fin-text {
+            padding: 20px;
+            width: 65%;
+            font-size: 200%;
+         
+        }
+        .fin1, .fin2 {
+            float: left;
+            height: 100%;
+        }
+        .fin1 {
+            height: 90%;
+            width: 65%;
+            border-right: 1px solid rgb(1, 1, 57);
+        }
+        .fin2 {
+         
+            margin-left: 2%;
+            width: 33%;
+        }
+        #fin2-first-new {
+            width: 90%;
+            margin-left: 5%;
+            height: 200px;
+            margin-top: 0%;
+        }
+        #fin2-new {
+            width: 90%;
+            margin-left: 5%;
+            height: 200px;
+            margin-top: 15%;
+        }
+        #fin-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        #fin1-text {
+            width: 80%;
+        }
+        h2 {
+            font-size: 130%;
+            padding: 20px;
+        }
+
+
+  
+
+  @media screen and (max-width: 600px) {/*Gia kinhta, mikres o8ones */
+
+    body {
+     width: 100%;
+   
+     height: 2000;
+     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    .navbar-inverse {
+      width: 100%;
+    }
+    #myNavbar {
+      background-color: rgb(1, 1, 57);
+      margin-top: 0;
+    }
+    #myNavbar a {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+    }
+    .navbar-nav {
+      float: left;
+      margin-right: 0;
+    }
+    .navbar-brand {
+      width: 40%;
+      margin-top: -5px;
+    }
+    #brand-image {
+      width: 60px;
+      margin-top: -5px;
+    }
+    .navbar-header {
+      margin-top: 2px;
+      padding-left: 0;
+    }
+
+
+
+    .xorhgoi {
+      margin-top: 50%;
+    }
+    .titlos-xorhgoi {
+      font-size: 200%;
+    }
+    .bottom {
+      height: 300px;
+    }
+    #b2 {
+      display: none;
+    }
+    #b1,#b3 {
+      width: 100%;
+      text-align: left;
+      padding: 10px;
+      font-size: 90%;
+    }
+
+    .finswimming {
+        width: 100%;
+        margin-left: 0;
+    }
+    .fin1 {
+        width: 55%;
+        border: none;
+    }
+    .fin2 {
+        width: 45%;  margin-left: 0;
+    }
+    #fin1-text {
+        width: 100%;
+    }
+    h2 {
+        font-size: 100%;
+    }
+
+  }
