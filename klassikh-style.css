@@ -17,6 +17,9 @@ body {
     float: right;
     margin-right: 200px;
    }
+   #name {
+       color: white;
+    }
    #myNavbar {
     padding-top: 15px;
 
@@ -169,6 +172,11 @@ h2 {
       width: 100%;
       float: left;
       margin-left: 0;
+    }
+    #name {
+      padding: 0;
+      margin-top: 2%;
+      margin-left: -10%;
     }
     .navbar-nav {
       float: left;
