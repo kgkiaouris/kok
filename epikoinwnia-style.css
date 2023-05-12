@@ -19,6 +19,7 @@ body {
    }
    #myNavbar {
     padding-top: 15px;
+    background-color: rgb(1, 1, 57);
    }
    #myNavbar a {
     transition-duration: 0.7s;
