@@ -6,6 +6,10 @@ body {
     background-size: cover;
     height: 900px;
    }
+ .dropdown-menu {
+    background-color: rgb(1, 1, 57);
+    text-align: left;
+   }
    .navbar-inverse {
     margin-top: 2%;
     background-color: rgb(1, 1, 57);
