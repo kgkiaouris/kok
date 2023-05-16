@@ -60,6 +60,7 @@ body {
      width: 100%;
      margin: 0 auto;
      overflow: hidden;
+     z-index: -1;
    }
    .slideshow-container img {
      position: absolute;
@@ -352,7 +353,8 @@ body {
       height: 60px;
       font-size: 100%;
       padding-top: 8px;
-      bottom: 80px
+      bottom: 80px;
+      z-index: -1;
     }
     #myBtn5 {
       width: 30%;
