@@ -356,7 +356,7 @@ body {
     }
     #myBtn5 {
       width: 30%;
-      margin-top: -30%;
+      margin-top: -20%;
       margin-left: 35%;
     }
     .modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5 {
@@ -376,6 +376,7 @@ body {
 
     .titlos-tmhmata {
       font-size: 200%;
+      margin-top: 12%
     }
     .Tmhmata {
       width: 100%;
