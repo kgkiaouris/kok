@@ -54,12 +54,23 @@ body {
     margin-left: 15%;
     height: 550px;
    }
-   #top-image {
-    width: 90%;
+    .slideshow-container {
+    position: relative;
     height: 100%;
-    object-fit: contain !important;
-    margin-left: 5%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
    }
+   .slideshow-container img {
+    position: absolute;
+    height: 100%;
+    margin-left: 5%;
+    width: 90%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+   }
+  
    .top-lezanda {
     height: 100px;
     width: 90%;
