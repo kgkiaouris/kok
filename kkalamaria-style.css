@@ -54,21 +54,21 @@ body {
     margin-left: 15%;
     height: 550px;
    }
-    .slideshow-container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+   .slideshow-container {
+     position: relative;
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     overflow: hidden;
    }
    .slideshow-container img {
-    position: absolute;
-    height: 100%;
-    margin-left: 5%;
-    width: 90%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+     position: absolute;
+     height: 100%;
+     margin-left: 5%;
+     width: 90%;
+     object-fit: cover;
+     opacity: 0;
+     transition: opacity 1s ease-in-out;
    }
   
    .top-lezanda {
@@ -345,16 +345,18 @@ body {
     .top-new {
       width: 100%;
       margin-left: 0;
-      height: 250px;
+      height: 220px;
+      
     }
     .top-lezanda {
       height: 60px;
       font-size: 100%;
       padding-top: 8px;
+      bottom: 80px
     }
     #myBtn5 {
       width: 30%;
-      margin-top: -35%;
+      margin-top: -30%;
       margin-left: 35%;
     }
     .modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5 {
