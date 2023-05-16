@@ -140,9 +140,33 @@
             </div>
         </nav>
         <div class="top-new">
-            <img src="https://kgkiaouris.github.io/kok/kok-images/kok-prwtathlhtes-img.jpg" id="top-image">
+            <div class="slideshow-container">
+               <img src="https://kgkiaouris.github.io/kok/kok-images/agoria-kypello.jpg" alt="kok">
+               <img src="https://kgkiaouris.github.io/kok/kok-images/koritsia-kypello.jpg" alt="kok">
+               <img src="https://kgkiaouris.github.io/kok/kok-images/kok-prwtathlhtes-img.jpg" alt="κοκ">
+               <img src="https://kgkiaouris.github.io/kok/kok-images/kok-prwtathlhtes2-img.jpg" alt="κοκ">
+           </div>
             <div class="top-lezanda">ΠΡΩΤΑΘΛΗΤΡΙΑ ΟΜΑΔΑ ΓΙΑ ΔΕΥΤΕΡΗ ΣΥΝΕΧΟΜΕΝΗ ΧΡΟΝΙΑ Ο ΚΟ ΚΑΛΑΜΑΡΙΑΣ</div>
             <button id="myBtn5" onclick=fun5()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            
+            <script>
+          
+        function startSlideshow() {
+            var slideshowImages = document.querySelectorAll('.slideshow-container img');
+            var currentImageIndex = 0;
+            var totalImages = slideshowImages.length;
+      
+            slideshowImages[currentImageIndex].style.opacity = '1';
+      
+            function transitionSlides() {
+                slideshowImages[currentImageIndex].style.opacity = '0';
+                currentImageIndex = (currentImageIndex + 1) % totalImages;
+                slideshowImages[currentImageIndex].style.opacity = '1';
+            }
+            setInterval(transitionSlides, 3000);
+        }
+        startSlideshow();
+        </script>
 
             <div id="myModal5" class="modal5">
               <div class="modal-content5">
