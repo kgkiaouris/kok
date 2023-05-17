@@ -173,6 +173,8 @@ body {
     margin-left: 2%;
     border-radius: 10px;
     transition-duration: 0.7s;
+    color: rgb(1, 1, 57);
+    text-align: center;
   }
   .titlos-tmhmata {
     width: 100%;
@@ -390,6 +392,9 @@ body {
       width: 40%;
       height: 100px;
     
+    }
+    h5 {
+      font-size: 90%
     }
     #t1 {
       margin-left: 9%;
