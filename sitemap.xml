@@ -8,24 +8,29 @@
 
 
 <url>
-  <loc>https://kgkiaouris.github.io/kok</loc>
-  <lastmod>2023-05-14T13:41:42+00:00</lastmod>
-  <priority>1.0</priority>
-</url>
- <url>
-  <loc>https://kgkiaouris.github.io/kok/kalamaria-epikoinwnia</loc>
-  <lastmod>2023-05-14T13:41:42+00:00</lastmod>
-  <priority>0.6</priority>
+  <loc>https://kokalamarias.gr/</loc>
+  <lastmod>2023-05-21T10:53:47+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://kgkiaouris.github.io/kok/kalamaria-texnikh</loc>
-  <lastmod>2023-05-14T13:41:42+00:00</lastmod>
-  <priority>0.6</priority>
+  <loc>https://kokalamarias.gr/kalamaria-klasikh</loc>
+  <lastmod>2023-05-21T10:53:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kgkiaouris.github.io/kok/kalamaria-klasikh</loc>
-  <lastmod>2023-05-14T13:41:42+00:00</lastmod>
-  <priority>0.6</priority>
+  <loc>https://kokalamarias.gr/kalamaria-texnikh</loc>
+  <lastmod>2023-05-21T10:53:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kokalamarias.gr/kalamaria-epikoinwnia</loc>
+  <lastmod>2023-05-21T10:53:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kokalamarias.gr/kalamaria-texnikh.html</loc>
+  <lastmod>2023-05-21T10:53:47+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 
