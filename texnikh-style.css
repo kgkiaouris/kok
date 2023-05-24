@@ -329,3 +329,20 @@ body {
     height: 250px;
   }
 }
+@keyframes appearSquare {
+      0% { opacity: 0; transform: scale(0.2); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    
+    .c1 {
+      
+      animation: appearSquare 1.5s ease-in-out;
+    }
+    @keyframes moveInversee {
+      0% { transform: translateY(-180%); }
+      100% { transform: translateY(0); }
+    }
+    
+    .navbar-inverse, .head {
+      animation: moveInversee 1s ease-in-out;
+    }
