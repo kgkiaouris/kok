@@ -298,9 +298,7 @@ body {
     margin-top: 2%;
     
     background-color: rgb(1, 1, 57);
-    border: none;
-    border-radius: 0;
-    height: 80px;
+  
    }
    .slideshow-container {
     position: relative;
