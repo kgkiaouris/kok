@@ -154,10 +154,7 @@
     }
     .text {
        margin-top: 10px; /* Adjust the spacing between the image and text */
-       background: linear-gradient(45deg,white, rgb(1, 1, 57));
-       background-clip: text;
-      -webkit-background-clip: text;
-       color: transparent;
+       color: black;
        width: 70%;
        font-weight: bold;
        text-align: center;
