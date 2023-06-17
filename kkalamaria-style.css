@@ -380,7 +380,7 @@ body {
   #modal-text {
     width: 100%;
   }
-  #imtop, #modal-top-text {
+  #im, #imtop, #modal-top-text {
     width: 100%;
     height: 250px;
     margin-top: 0;
