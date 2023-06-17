@@ -142,7 +142,7 @@ body {
   font-weight: bold;
   transition-duration: 0.7s;
 }
-#imtop,#modal-top-text, #modal-text {
+#im,#imtop,#modal-top-text, #modal-text {
   float: left;
   width: 50%;
   height: 90%;
