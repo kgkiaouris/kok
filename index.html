@@ -10,12 +10,28 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://kokalamarias.gr/kkalamaria-style.css">
+      <link rel="stylesheet" href="./kkalamaria-style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
       <script>
+        function funtop(){
+                var modal = document.getElementById("myModaltop");
+                var btn = document.getElementById("mytopBtn");
+                var span = document.getElementsByClassName("closetop")[0];
+                btn.onclick = function() {
+                   modal.style.display = "block";
+                }
+                span.onclick = function() {
+                   modal.style.display = "none";
+                }
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                     modal.style.display = "none";
+                   }
+                }
+            }
           function fun(){
                 var modal = document.getElementById("myModal");
                 var btn = document.getElementById("myBtn");
@@ -112,8 +128,9 @@
                    }
                 }
             }
-        </script>
-          <script>
+      </script>
+      
+      <script>
   document.addEventListener("DOMContentLoaded", function () {
     var modal = document.getElementById("myModal5");
     var btn = document.getElementById("myBtn5");
@@ -244,7 +261,27 @@
           };
         });
       </script>
-      
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var modal = document.getElementById("myModaltop");
+            var btn = document.getElementById("mytopBtn");
+            var span = document.getElementsByClassName("closetop")[0];
+            
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          });
+      </script>
         
     </head>
     <body>
@@ -277,17 +314,19 @@
             </div>
         </nav>
         <div class="top-new">
-            <div class="slideshow-container">
-               <img src="https://kokalamarias.gr/kok-images/agoria-kypello.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-               <img src="https://kokalamarias.gr/kok-images/koritsia-kypello.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-               <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-               <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-           </div>
-            <div class="top-lezanda">ΠΡΩΤΑΘΛΗΤΡΙΑ ΟΜΑΔΑ ΓΙΑ ΔΕΥΤΕΡΗ ΣΥΝΕΧΟΜΕΝΗ ΧΡΟΝΙΑ Ο ΚΟ ΚΑΛΑΜΑΡΙΑΣ</div>
-            <button id="myBtn5" onclick=fun5()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
-            
-            <script>
+             <div class="slideshow-container">
+               <img src="https://kokalamarias.gr/kok-images/kalfidou-eleni-ethnikh-neanidwn" alt="Καλφίδου Ελένη Εθνική ομάδα τεχνικής κολύμβησης">
+               <img src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn"alt="Τελιούση Ιφιγένεια Εθνική ομάδα τεχνικής κολύμβησης">
+             <!--  <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+               <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">-->
+           </div> 
+           <!-- <img src="C:\Users\παοκια\Desktop\Κολυμβητικός Όμιλος Καλαμαριάς\20230617_170958.jpg" id="topimg">-->
+            <div class="top-lezanda">ΑΝΑΧΩΡΟΥΝ ΟΙ ΑΘΛΗΤΡΙΕΣ ΜΑΣ ΓΙΑ ΤΗΝ ΑΠΟΣΤΟΛΗ ΤΗΣ ΕΘΝΙΚΗΣ ΟΜΑΔΑΣ</div>
+            <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+           
           
+            <script>
+       
         function startSlideshow() {
             var slideshowImages = document.querySelectorAll('.slideshow-container img');
             var currentImageIndex = 0;
@@ -304,19 +343,25 @@
         }
         startSlideshow();
         </script>
+        
 
-            <div id="myModal5" class="modal5">
-              <div class="modal-content5">
-                <span class="close5">&times;</span>
-                <div id="im">
-                  <img id="modal-image1" src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg">
+            <div id="myModaltop" class="modaltop">
+              <div class="modal-contenttop">
+                <span class="closetop">&times;</span>
+                <div id="imtop">
+                  <img id="modal-image1" src="https://kokalamarias.gr/kok-images/kalfidou-eleni-ethnikh-neanidwn.jpg" alt="Καλφίδου Ελένη Εθνική ομάδα τεχνικής κολύμβησης">
+                  <img id="modal-image1" src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn.jpg" alt="Τελιούση Ιφιγένεια Εθνική ομάδα τεχνικής κολύμβησης">
                 </div>
                 <div id="modal-top-text">
-                  <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
-                  <br>
-                  <p>Πρωταθλητές Ελλάδος Τεχνικής Κολύμβησης Κατηγορίας Ανδρών - Γυναικών ΚΑΙ γενική κατηγορία.</p>
-                  <p>Ο ΚΟ Καλαμαριάς είναι ο θριαμβευτής του Εθνικού πρωταθλήματος Τεχικής Κολύμβησης Ανδρών - Γυναικών που ολοκληρώθηκε με απόλυτη επιτυχία, το βράδυ της Κυριακής (7/5), στο κολυμβητήριο Νέας Ιωνίας Βόλου.</p>
-                  <p>Ο σύλλογος της Καλαμαριάς διατήρησε τα σκήπτρα του πρωταθλητή, καθώς πρώτευσε στη Γενική βαθμολογία των αγώνων με 266 βαθμούς, όσο και στις επιμέρους βαθμολογίες, των Ανδρών (168) και των Γυναικών (98).</p>
+                  <h2>Εθνική ομάδα Νέων/Νεανίδων</h2>
+                
+                  <p>Αναχώρησαν σήμερα το πρωί οι αθλήτριες της ομάδας μας Καλφιδου Ελένη και Τελιούση Ιφιγένεια. Οι πρωταθλήτριες μας ταξιδεύουν αύριο Κυριακή (18/6) από την Αθήνα με την  Εθνική μας Ομάδα των Νέων / Νεανίδων, για το αντίστοιχο Παγκόσμιο πρωτάθλημα (18ο) που διεξάγεται στην αιγυπτιακή πρωτεύουσα από  21 έως 24 Ιουνίου.</p>
+                  <p>Η Καλφίδου Ελένη θα αγωνιστεί στα αγωνίσματα 400, 800, 1500, 4x100, 4x200μ επιφάνεια ενώ η Τελιούση Ιφιγένεια στα 50μ άπνοια, 50, 100, 200, 4x50, 4x100, 4x200μ επιφάνεια. </p>
+                  <p>Αξίζει να σημειωθεί ότι παρόλο ότι και οι δύο αθλήτριες είναι κατηγορία Κορασίδων και οι δύο στις μέχρι στιγμής επιδόσεις τους έχουν επιτύχει χρόνους - όρια ακόμα και για την Εθνική Γυναικών! 
+                    Η Ιφιγένεια Τελιούση έχει επιλεχτεί για να συμμετάσχει και στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών - Γυναικών τον Ιούλιο στην Ουγγαρία, ενώ η Καλφίδου Ελένη παρόλο της εξαιρετικής της επίδοσης στα 1500μ. Επιφάνειας (όριο Γυναικών) δεν μπορεί να συμμετέχει ακόμα λόγω ορίου ηλικίας.
+                    Καλή επιτυχία στις γοργόνες της Καλαμαριάς! 
+                    <br><br>
+                    Περισσότερες πληροφορίες για το Παγκόσμιο πρωτάθλημα μπορείτε να βρείτε <a href="https://koe.org.gr/article/paei-kairo-tin-kuriaki-18-6-i-ethniki-mas-omada">εδώ</a> και <a href="https://www.cmas.org/finswimming/cmas-finswimming-world-junior-championship">εδώ</a> </p>
                 </div>
               </div>
           </div>   
@@ -338,6 +383,82 @@
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news">
 
+
+
+          <div id="n1"><img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
+            <div id="news-text">Πρωταθλήτρια ομάδα για δεύτερη συνεχόμενη φορά ο Κολυμβητικός όμιλος Καλαμαριάς</div>
+            <button id="myBtn5" onclick=fun5()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal5" class="modal5">
+             <div class="modal-content5">
+                <span class="close5">&times;</span>
+                <div id="im">
+                 <img id="modal-image" src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg">
+                </div>
+                <div id="modal-text">
+                 <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
+                 <p>07/05/2023</p>
+                 
+                 <p id="descrpiption" >Πρωταθλητές Ελλάδος Τεχνικής Κολύμβησης Κατηγορίας Ανδρών - Γυναικών ΚΑΙ γενική κατηγορία
+
+                  <br></p>
+                  <p id="descrpiption" >Ο ΚΟ Καλαμαριάς είναι ο θριαμβευτής του Εθνικού πρωταθλήματος Τεχικής Κολύμβησης Ανδρών - Γυναικών που ολοκληρώθηκε με απόλυτη επιτυχία, το βράδυ της Κυριακής (7/5), στο κολυμβητήριο Νέας Ιωνίας Βόλου.<br>Ο σύλλογος της Καλαμαριάς διατήρησε τα σκήπτρα του πρωταθλητή, καθώς πρώτευσε στη Γενική βαθμολογία των αγώνων με 266 βαθμούς, όσο και στις επιμέρους βαθμολογίες, των Ανδρών (168) και των Γυναικών (98).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+
+
+
+
+           <div id="n1"><img src="https://kokalamarias.gr/kok-images/top-agwnwn-img.jpg" id="news-image">
+            <div id="news-text">Οι κορυφαίοι των Αγώνων</div>
+            <button id="myBtn4" onclick=fun4()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal4" class="modal4">
+             <div class="modal-content4">
+                <span class="close4">&times;</span>
+                <div id="im">
+                 <img id="modal-image" src="https://kokalamarias.gr/kok-images/top-agwnwn-img.jpg">
+                </div>
+                <div id="modal-text">
+                 <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
+                 <p>07/05/2023</p>
+                 
+                 <p id="descrpiption" >Καλύτερος αθλητής του Εθνικού Πρωταθλήματος αναδείχθηκε ο Γιώργος Καλτσουκαλάς των Δελφινιών Περιστερίου με την επίδοση του στα 100μ. επιφάνεια, 34.65, συγκεντρώνοντας 967 βαθμούς σύμφωνα με την βαθμολογία της Παγκόσμιας Ομοσπονδίας.
+
+                  <br></p>
+                  <p id="descrpiption" >Καλύτερη αθλήτρια των αγώνων ήταν η Αθανασία Καρατσιβή της Νίκης Βόλου με την επίδοση της στα 800μ. επιφάνεια, 7:01.15, συγκεντρώνοντας 967 βαθμούς σύμφωνα με την βαθμολογία της Παγκόσμιας Ομοσπονδίας.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="n1"><img src="https://kokalamarias.gr/kok-images/apotelesmata1-img.jpeg" alt="Όρια Τεχνικής κολύμβησης τελευταία μέρα" id="news-image">
+            <div id="news-text">Tα όρια στο φινάλε </div>
+            <button id="myBtn3" onclick=fun3()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal3" class="modal3">
+              <div class="modal-content3">
+                <span class="close3">&times;</span>
+                <div id="im">
+                  <img id="modal-image" src="https://kokalamarias.gr/kok-images/apotelesmata1-img.jpeg" alt="Όρια Τεχνικής κολύμβησης τελευταία μέρα">
+                </div>
+                <div id="modal-text">
+                  <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
+                  <p>07/05/2023</p>
+                  <p id="descrpiption">ΤΑ ΟΡΙΑ ΚΑΙ ΤΟ ΡΕΚΟΡ ΣΤΟΥΣ ΤΕΛΙΚΟΥΣ ΤΗΣ ΤΕΛΕΥΤΑΙΑΣ ΗΜΕΡΑΣ:</p>
+                  <p id="descrpiption" ><b>100 Επιφάνεια Ανδρών: </b>Γιώργος Καλτσουκαλάς των Δελφινιών Περιστερίου με 34.65,Γιώργος Παναγιωτίδης του ΚΟ Καλαμαριάς με 35.54 .</p>
+                  <p id="descrpiption" ><b>100 Επιφάνεια Γυναικών: </b>Μαρία Ηλιάκη του Γλαύκου Περιστερίου με  41.59, Ιφιγένεια Τελιούση του ΚΟ Καλαμαριάς με 42.30.</p>
+                  <p id="descrpiption"><b>100 Διπλά Πέδιλα Γυναικών: </b> Μαρία Περάκη του ΝΟ Χανίων με 49.55, Γιολάντα Καπέρδα του Άλμπατρος Ιωαννίνων με 49.51 και Λυδία Παντελόγλου της Νίκης Βόλου με 49.65.</p>
+                  <p id="descrpiption"><b>800 Επιφάνεια Ανδρών: </b>Αθανάσιος Θεοδωρίδης του Άτλαντα Θεσσαλονίκης με 6:43.74 <br><b>800 Επιφάνεια Γυναικών: </b>Αθανασία Καρατσιβή της Νίκης Βόλου με 7:01.15</p>
+                  <p id="descrpiption"><b>400 Υποβρύχιο Ανδρών: </b>Κωνσταντίνος Τσιάβος της ΑΕ Χαϊδαρίου με 2:54.05</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div id="n1"><img src="https://koe.org.gr/uploads/medium/37237356259208974887059509446192900341760n-ba2d5-e74d7.jpg" alt="Εθνικές ομάδες Τεχνική κολύμβηση" id="news-image">
             <div id="news-text">Ως μέλη της Εθνικής Ομάδας θα είναι και φέτος αθλητές και αθλήτριες της ομάδας μας. </div>
             <button id="myBtn2" onclick=fun2()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
@@ -365,52 +486,31 @@
             </div>
             </div>
           </div>
-          
 
-          <div id="n1"><img src="https://kokalamarias.gr/kok-images/apotelesmata1-img.jpeg" alt="Όρια Τεχνικής κολύμβησης τελευταία μέρα" id="news-image">
-            <div id="news-text">Tα όρια στο φινάλε </div>
-            <button id="myBtn3" onclick=fun3()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
-            <div id="myModal3" class="modal3">
-              <div class="modal-content3">
-                <span class="close3">&times;</span>
-                <div id="im">
-                  <img id="modal-image" src="https://kokalamarias.gr/kok-images/apotelesmata1-img.jpeg" alt="Όρια Τεχνικής κολύμβησης τελευταία μέρα">
-                </div>
-                <div id="modal-text">
-                  <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
-                  <p>07/05/2023</p>
-                  <p id="descrpiption">ΤΑ ΟΡΙΑ ΚΑΙ ΤΟ ΡΕΚΟΡ ΣΤΟΥΣ ΤΕΛΙΚΟΥΣ ΤΗΣ ΤΕΛΕΥΤΑΙΑΣ ΗΜΕΡΑΣ:</p>
-                  <p id="descrpiption" ><b>100 Επιφάνεια Ανδρών: </b>Γιώργος Καλτσουκαλάς των Δελφινιών Περιστερίου με 34.65,Γιώργος Παναγιωτίδης του ΚΟ Καλαμαριάς με 35.54 .</p>
-                  <p id="descrpiption" ><b>100 Επιφάνεια Γυναικών: </b>Μαρία Ηλιάκη του Γλαύκου Περιστερίου με  41.59, Ιφιγένεια Τελιούση του ΚΟ Καλαμαριάς με 42.30.</p>
-                  <p id="descrpiption"><b>100 Διπλά Πέδιλα Γυναικών: </b> Μαρία Περάκη του ΝΟ Χανίων με 49.55, Γιολάντα Καπέρδα του Άλμπατρος Ιωαννίνων με 49.51 και Λυδία Παντελόγλου της Νίκης Βόλου με 49.65.</p>
-                  <p id="descrpiption"><b>800 Επιφάνεια Ανδρών: </b>Αθανάσιος Θεοδωρίδης του Άτλαντα Θεσσαλονίκης με 6:43.74 <br><b>800 Επιφάνεια Γυναικών: </b>Αθανασία Καρατσιβή της Νίκης Βόλου με 7:01.15</p>
-                  <p id="descrpiption"><b>400 Υποβρύχιο Ανδρών: </b>Κωνσταντίνος Τσιάβος της ΑΕ Χαϊδαρίου με 2:54.05</p>
-                </div>
-              </div>
+
+         
+          
+         
+          <div id="n1"><img src="https://kokalamarias.gr/kok-images/apotelesmata3-img.jpeg" id="news-image" alt="Όρια Τεχνικής κολύμβησης OPEN"><div id="news-text"> Εννέα όρια σε έξι αγωνίσματα στους τελικούς της πρώτης μέρας</div>
+          <button id="myBtn1" onclick=fun1()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+          <div id="myModal1" class="modal1">
+            <div class="modal-content1">
+              <span class="close1">&times;</span>
+              <div id="im">
+                <img id="modal-image" src="https://kokalamarias.gr/kok-images/apotelesmata3-img.jpeg" alt="Όρια Τεχνικής κολύμβησης OPEN">
+            </div>
+            <div id="modal-text">
+                <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
+                <p>05/05/2023</p>
+                <p id="descrpiption">ΟΡΙΑ ΚΑΙ ΡΕΚΟΡ ΣΤΟΥΣ ΤΕΛΙΚΟΥΣ ΤΗΣ ΠΡΩΤΗΣ ΗΜΕΡΑΣ:</p>
+                  <p id="descrpiption" ><b>200 Επιφάνεια Νέων: </b>Νικόλαος Μαυρομμάτης του ΙΟΘ με επίδοση 1:27.07.</p>
+                  <p id="descrpiption" ><b>200 Διπλά Πέδιλα Γυναικών: </b>Γιολάντα Καπέρδα του Άλμπατρος Ιωαννίνων με 1:49.06.</p>
+                  <p id="descrpiption"><b>50 Άπνοια Ανδρών: </b> Γιώργος Παναγιωτίδης του ΚΟ Καλαμαριάς με 14.27, Γιώργος Καλτσουκαλάς των Δελφινιών Περιστερίου με 14.21.</p>
+                  <p id="descrpiption"><b>50 Άπνοια Νέων: </b>Αθανάσιος Μιχαηλίδης του Γλαύκου Περιστερίου με επίδοση 15.60. <br><b>50 Άπνοια Νεανίδων: </b>Ιφιγένεια Τελιούση του ΚΟ Καλαμαριάς με 17.00, Μαρία Ηλιάκη του Γλαύκου Περιστερίου με 17.29.</p>
+                  <p id="descrpiption"><b>1500 Επιφάνεια Νέων: </b>Αθανάσιος Θεοδωρίδης του Άτλαντα Θεσσαλονίκης με 13:02.44.<br><b>1500 Επιφάνεια Γυναικών: </b>Ελένη Καλφίδου του ΚΟ Καλαμαριάς, με επίδοση 13:55.30 (όριο Γυναικών/Νεανίδων)</p>
+            </div>
             </div>
           </div>
-
-
-          <div id="n1"><img src="https://kokalamarias.gr/kok-images/top-agwnwn-img.jpg" id="news-image">
-            <div id="news-text">Οι κορυφαίοι των Αγώνων</div>
-            <button id="myBtn4" onclick=fun4()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
-            <div id="myModal4" class="modal4">
-             <div class="modal-content4">
-                <span class="close4">&times;</span>
-                <div id="im">
-                 <img id="modal-image" src="https://kokalamarias.gr/kok-images/top-agwnwn-img.jpg">
-                </div>
-                <div id="modal-text">
-                 <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
-                 <p>07/05/2023</p>
-                 
-                 <p id="descrpiption" >Καλύτερος αθλητής του Εθνικού Πρωταθλήματος αναδείχθηκε ο Γιώργος Καλτσουκαλάς των Δελφινιών Περιστερίου με την επίδοση του στα 100μ. επιφάνεια, 34.65, συγκεντρώνοντας 967 βαθμούς σύμφωνα με την βαθμολογία της Παγκόσμιας Ομοσπονδίας.
-
-                  <br></p>
-                  <p id="descrpiption" >Καλύτερη αθλήτρια των αγώνων ήταν η Αθανασία Καρατσιβή της Νίκης Βόλου με την επίδοση της στα 800μ. επιφάνεια, 7:01.15, συγκεντρώνοντας 967 βαθμούς σύμφωνα με την βαθμολογία της Παγκόσμιας Ομοσπονδίας.</p>
-                </div>
-              </div>
-            </div>
           </div>
           
           <div id="n1"><img src="https://kokalamarias.gr/kok-images/apotelesmata2-img.jpeg" id="news-image" alt="Όρια Τεχνικής κολύμβησης OPEN">
@@ -436,27 +536,6 @@
             </div>
           </div>
 
-          <div id="n1"><img src="https://kokalamarias.gr/kok-images/apotelesmata3-img.jpeg" id="news-image" alt="Όρια Τεχνικής κολύμβησης OPEN"><div id="news-text"> Εννέα όρια σε έξι αγωνίσματα στους τελικούς της πρώτης μέρας</div>
-          <button id="myBtn1" onclick=fun1()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
-          <div id="myModal1" class="modal1">
-            <div class="modal-content1">
-              <span class="close1">&times;</span>
-              <div id="im">
-                <img id="modal-image" src="https://kokalamarias.gr/kok-images/apotelesmata3-img.jpeg" alt="Όρια Τεχνικής κολύμβησης OPEN">
-            </div>
-            <div id="modal-text">
-                <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
-                <p>05/05/2023</p>
-                <p id="descrpiption">ΟΡΙΑ ΚΑΙ ΡΕΚΟΡ ΣΤΟΥΣ ΤΕΛΙΚΟΥΣ ΤΗΣ ΠΡΩΤΗΣ ΗΜΕΡΑΣ:</p>
-                  <p id="descrpiption" ><b>200 Επιφάνεια Νέων: </b>Νικόλαος Μαυρομμάτης του ΙΟΘ με επίδοση 1:27.07.</p>
-                  <p id="descrpiption" ><b>200 Διπλά Πέδιλα Γυναικών: </b>Γιολάντα Καπέρδα του Άλμπατρος Ιωαννίνων με 1:49.06.</p>
-                  <p id="descrpiption"><b>50 Άπνοια Ανδρών: </b> Γιώργος Παναγιωτίδης του ΚΟ Καλαμαριάς με 14.27, Γιώργος Καλτσουκαλάς των Δελφινιών Περιστερίου με 14.21.</p>
-                  <p id="descrpiption"><b>50 Άπνοια Νέων: </b>Αθανάσιος Μιχαηλίδης του Γλαύκου Περιστερίου με επίδοση 15.60. <br><b>50 Άπνοια Νεανίδων: </b>Ιφιγένεια Τελιούση του ΚΟ Καλαμαριάς με 17.00, Μαρία Ηλιάκη του Γλαύκου Περιστερίου με 17.29.</p>
-                  <p id="descrpiption"><b>1500 Επιφάνεια Νέων: </b>Αθανάσιος Θεοδωρίδης του Άτλαντα Θεσσαλονίκης με 13:02.44.<br><b>1500 Επιφάνεια Γυναικών: </b>Ελένη Καλφίδου του ΚΟ Καλαμαριάς, με επίδοση 13:55.30 (όριο Γυναικών/Νεανίδων)</p>
-            </div>
-            </div>
-          </div>
-          </div>
 
 
           
