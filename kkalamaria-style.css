@@ -95,7 +95,7 @@ body {
 
 
 
-#myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5,#mytopBtn {
+#myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5,#myBtn6,#mytopBtn {
   height: 50px;
   width: 10%;
   position: absolute;
@@ -113,7 +113,7 @@ body {
   width: 10%;
   margin-left: 30%;
 }
-.modal,.modal1,.modal2,.modal3,.modal4,.modal5,.modaltop {  
+.modal,.modal1,.modal2,.modal3,.modal4,.modal5,.modal6,.modaltop {  
   display: none; 
   position: fixed;
   z-index: 1; 
@@ -126,7 +126,7 @@ body {
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.8); 
 }
-.modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-contenttop {
+.modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-contenttop {
   background-color: #fefefe;
   color: black;
   padding: 20px;
@@ -135,7 +135,7 @@ body {
   margin-left: 10%;
   height: 500px;
 }
-.close,.close1, .close2,.close3,.close4,.close5,.closetop {
+.close,.close1, .close2,.close3,.close4,.close5,.close6,.closetop {
   color: grey;
   float: right;
   font-size: 28px;
@@ -147,6 +147,11 @@ body {
   width: 50%;
   height: 90%;
 
+}
+#modal-image2 { 
+  width: 92%;
+  height: 400px;
+  object-fit: contain;
 }
 #modal-image1 {
   float: left; 
@@ -235,7 +240,7 @@ body {
   width: 100%;
   height: 230px;
   background: linear-gradient(to bottom, rgb(2, 2, 96), #08080f);
-  margin-top: 70%;
+  margin-top: 100%;
  
 }
 
@@ -286,6 +291,7 @@ body {
 #myBtn2:hover,
 #myBtn1:hover,
 #myBtn:hover,
+#myBtn6:hover,
 #mytopBtn:hover {
   color: blue;
 }
@@ -295,6 +301,7 @@ body {
 .close3:hover ,
 .close4:hover ,
 .close5:hover ,
+.close6:hover ,
 .closetop:hover  {
   color: black;
   cursor: pointer;
@@ -371,7 +378,7 @@ body {
     margin-top: -20%;
     margin-left: 35%;
   }
-  .modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-contenttop {
+  .modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-contenttop {
     height: 1200px;
     width: 95%;
     margin-left: 2.5%;
@@ -431,14 +438,17 @@ body {
   #news-image {
     height: 150px ;
   }
-  #myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5{
+  #myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5,#myBtn6{
     width: 40%;
     margin-left: 23%;
+  }
+   #modal-image2 {
+    height: 200px;
   }
 
   .xorhgoi {
     height: 300px;
-    margin-top: 520%;
+    margin-top: 570%;
   }
   #xorhgoi-image {
       height: 80px;
