@@ -146,6 +146,27 @@
             }
       </script>
       <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                var modal = document.getElementById("myModal7");
+                var btn = document.getElementById("myBtn7");
+                var span = document.getElementsByClassName("close7")[0];
+            
+                btn.onclick = function () {
+                  modal.style.display = "block";
+                };
+            
+                span.onclick = function () {
+                  modal.style.display = "none";
+                };
+            
+                window.onclick = function (event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                };
+              });
+      </script>
+      <script>
         document.addEventListener("DOMContentLoaded", function () {
           var modal = document.getElementById("myModal6");
           var btn = document.getElementById("myBtn6");
@@ -357,7 +378,7 @@
                <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
            </div> -->
           <img src="https://kokalamarias.gr/kok-images/cairo-agwnes.jpg" id="topimg">
-            <div class="top-lezanda">ΠΡΟΚΡΙΣΗ ΣΤΟΥΣ ΤΕΛΙΚΟΥΣ ΓΙΑ ΤΙΣ ΔΥΟ ΑΘΛΗΤΡΙΕΣ ΜΑΣ</div>
+           <div class="top-lezanda">ΧΡΗΣΗ Η ΤΕΛΙΟΥΣΗ ΜΕ ΤΗΝ ΣΚΥΤΑΛΟΔΡΟΜΙΑ 4X50Μ ΕΠΙΦΑΝΕΙΑΣ</div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
@@ -415,6 +436,34 @@
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news">
 
+          <!--  <div id="n1"><img src="C:\Users\παοκια\Desktop\Κολυμβητικός Όμιλος Καλαμαριάς\cairo-agwnes.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
+            <div id="news-text">Προκρίσεις στους τελικούς για τις δύο αθλήτριές μας.</div>
+            <button id="myBtn7" onclick=fun7()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal7" class="modal7">
+             <div class="modal-content7">
+                <span class="close7">&times;</span>
+                <div id="im">
+                  <img id="modal-image" src="https://www.cmas.org/php_images/11231325_1478266635811111_1994143111001204801_n-640x427.jpg">
+              
+                </div>
+                <div id="modal-text">
+                  <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων</h2>
+                
+                 
+                  <p>Το παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων ξεκίνησε σήμερα το πρωί στο Κάιρο. Οι αθλήτριες μας Τελιούση Ιφιγένεια και Καλφίδου Ελένη πέτυχαν την πρόκριση τους στους τελικούς στα αγωνίσματα που συμμετείχαν.</p>
+                  <p> <b>-Τελιούση Ιφιγένεια στα 100μ Επιφάνειας και 4x50μ Επιφάνειας. <br>-Καλφίδου Ελένη στα 400μ Επιφάνειας. </b></p><br><br>
+                  <p>Οι αγώνες συνεχίζονται το απόγευμα με τους αντίστοιχους τελικούς. Μπορείτε να παρακολουθήσετε τους αγώνες <a href="https://youtube.com/playlist?list=PLc0wKrFUkf-71ySizkQM6_Is0I5uVKu83">εδώ</a>.  </p>
+                    
+                
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+
+
+            
 
              <div id="n1"><img src="https://kokalamarias.gr/kok-images/anaxwrhsh-koritsiwn.jpg" alt="Εθνική ομάδα Νέων/Νεανίδων" id="news-image">
             <div id="news-text">Αναχωρούν οι αθλήτριές μας για την αποστολή της Εθνικής ομάδας.</div>
