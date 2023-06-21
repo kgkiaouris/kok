@@ -380,7 +380,7 @@ body {
     margin-top: -20%;
     margin-left: 35%;
   }
-  .modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-contenttop {
+  .modal-content,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-contenttop {
     height: 1200px;
     width: 95%;
     margin-left: 2.5%;
@@ -440,7 +440,7 @@ body {
   #news-image {
     height: 150px ;
   }
-  #myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5,#myBtn6{
+  #myBtn,#myBtn1,#myBtn2,#myBtn3,#myBtn4,#myBtn5,#myBtn6,#myBtn7{
     width: 40%;
     margin-left: 23%;
   }
