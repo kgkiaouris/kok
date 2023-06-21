@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
     <head>
       
@@ -128,8 +128,44 @@
                    }
                 }
             }
+          function fun6(){
+                var modal = document.getElementById("myModal6");
+                var btn = document.getElementById("myBtn6");
+                var span = document.getElementsByClassName("close6")[0];
+                btn.onclick = function() {
+                   modal.style.display = "block";
+                }
+                span.onclick = function() {
+                   modal.style.display = "none";
+                }
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                     modal.style.display = "none";
+                   }
+                }
+            }
       </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var modal = document.getElementById("myModal6");
+          var btn = document.getElementById("myBtn6");
+          var span = document.getElementsByClassName("close6")[0];
       
+          btn.onclick = function () {
+            modal.style.display = "block";
+          };
+      
+          span.onclick = function () {
+            modal.style.display = "none";
+          };
+      
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        });
+            </script>
       <script>
   document.addEventListener("DOMContentLoaded", function () {
     var modal = document.getElementById("myModal5");
@@ -314,18 +350,18 @@
             </div>
         </nav>
         <div class="top-new">
-             <div class="slideshow-container">
+            <!--  <div class="slideshow-container">
                <img src="https://kokalamarias.gr/kok-images/kalfidou-eleni-ethnikh-neanidwn.jpg" alt="Καλφίδου Ελένη Εθνική ομάδα τεχνικής κολύμβησης">
                <img src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn.jpg"alt="Τελιούση Ιφιγένεια Εθνική ομάδα τεχνικής κολύμβησης">
-             <!--  <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-               <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">-->
-           </div> 
-           <!-- <img src="C:\Users\παοκια\Desktop\Κολυμβητικός Όμιλος Καλαμαριάς\20230617_170958.jpg" id="topimg">-->
-            <div class="top-lezanda">ΑΝΑΧΩΡΟΥΝ ΟΙ ΑΘΛΗΤΡΙΕΣ ΜΑΣ ΓΙΑ ΤΗΝ ΑΠΟΣΤΟΛΗ ΤΗΣ ΕΘΝΙΚΗΣ ΟΜΑΔΑΣ</div>
+              <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+               <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+           </div> -->
+          <img src="https://kokalamarias.gr/kok-images/cairo-agwnes.jpg" id="topimg">
+            <div class="top-lezanda">ΠΡΟΚΡΙΣΗ ΣΤΟΥΣ ΤΕΛΙΚΟΥΣ ΓΙΑ ΤΙΣ ΔΥΟ ΑΘΛΗΤΡΙΕΣ ΜΑΣ</div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
-            <script>
+           <!-- <script>
        
         function startSlideshow() {
             var slideshowImages = document.querySelectorAll('.slideshow-container img');
@@ -342,26 +378,22 @@
             setInterval(transitionSlides, 3000);
         }
         startSlideshow();
-        </script>
+        </script> -->
         
 
             <div id="myModaltop" class="modaltop">
               <div class="modal-contenttop">
                 <span class="closetop">&times;</span>
                 <div id="imtop">
-                  <img id="modal-image1" src="https://kokalamarias.gr/kok-images/kalfidou-eleni-ethnikh-neanidwn.jpg" alt="Καλφίδου Ελένη Εθνική ομάδα τεχνικής κολύμβησης">
-                  <img id="modal-image1" src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn.jpg" alt="Τελιούση Ιφιγένεια Εθνική ομάδα τεχνικής κολύμβησης">
+                  <img id="modal-image2" src="https://kokalamarias.gr/kok-images/cairo-agwnes.jpg" alt="Πρόκριση στις αθλήτριες του Κο Καλαμαριάς">
+                 <!-- <img id="modal-image1" src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn.jpg" alt="Τελιούση Ιφιγένεια Εθνική ομάδα τεχνικής κολύμβησης">-->
                 </div>
                 <div id="modal-top-text">
-                  <h2>Εθνική ομάδα Νέων/Νεανίδων</h2>
+                  <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων</h2>
                 
-                  <p>Αναχώρησαν σήμερα το πρωί οι αθλήτριες της ομάδας μας Καλφιδου Ελένη και Τελιούση Ιφιγένεια. Οι πρωταθλήτριες μας ταξιδεύουν αύριο Κυριακή (18/6) από την Αθήνα με την  Εθνική μας Ομάδα των Νέων / Νεανίδων, για το αντίστοιχο Παγκόσμιο πρωτάθλημα (18ο) που διεξάγεται στην αιγυπτιακή πρωτεύουσα από  21 έως 24 Ιουνίου.</p>
-                  <p>Η Καλφίδου Ελένη θα αγωνιστεί στα αγωνίσματα 400, 800, 1500, 4x100, 4x200μ επιφάνεια ενώ η Τελιούση Ιφιγένεια στα 50μ άπνοια, 50, 100, 200, 4x50, 4x100, 4x200μ επιφάνεια. </p>
-                  <p>Αξίζει να σημειωθεί ότι παρόλο ότι και οι δύο αθλήτριες είναι κατηγορία Κορασίδων και οι δύο στις μέχρι στιγμής επιδόσεις τους έχουν επιτύχει χρόνους - όρια ακόμα και για την Εθνική Γυναικών! 
-                    Η Ιφιγένεια Τελιούση έχει επιλεχτεί για να συμμετάσχει και στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών - Γυναικών τον Ιούλιο στην Ουγγαρία, ενώ η Καλφίδου Ελένη παρόλο της εξαιρετικής της επίδοσης στα 1500μ. Επιφάνειας (όριο Γυναικών) δεν μπορεί να συμμετέχει ακόμα λόγω ορίου ηλικίας.
-                    Καλή επιτυχία στις γοργόνες της Καλαμαριάς! 
-                    <br><br>
-                    Περισσότερες πληροφορίες για το Παγκόσμιο πρωτάθλημα μπορείτε να βρείτε <a href="https://koe.org.gr/article/paei-kairo-tin-kuriaki-18-6-i-ethniki-mas-omada">εδώ</a> και <a href="https://www.cmas.org/finswimming/cmas-finswimming-world-junior-championship">εδώ</a> </p>
+                  <p>Το παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων ξεκίνησε σήμερα το πρωί στο Κάιρο. Οι αθλήτριες μας Τελιούση Ιφιγένεια και Καλφίδου Ελένη πέτυχαν την πρόκριση τους στους τελικούς στα αγωνίσματα που συμμετείχαν.</p>
+                  <p> <b>-Τελιούση Ιφιγένεια στα 100μ Επιφάνειας και 4x50μ Επιφάνειας. <br>-Καλφίδου Ελένη στα 400μ Επιφάνειας. </b></p><br><br>
+                  <p>Οι αγώνες συνεχίζονται το απόγευμα με τους αντίστοιχους τελικούς. Μπορείτε να παρακολουθήσετε τους αγώνες <a href="https://youtube.com/playlist?list=PLc0wKrFUkf-71ySizkQM6_Is0I5uVKu83">εδώ</a>. </p>
                 </div>
               </div>
           </div>   
@@ -382,6 +414,32 @@
 
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news">
+
+
+             <div id="n1"><img src="https://kokalamarias.gr/kok-images/anaxwrhsh-koritsiwn.jpg" alt="Εθνική ομάδα Νέων/Νεανίδων" id="news-image">
+            <div id="news-text">Αναχωρούν οι αθλήτριές μας για την αποστολή της Εθνικής ομάδας.</div>
+            <button id="myBtn6" onclick=fun6()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal6" class="modal6">
+             <div class="modal-content6">
+                <span class="close6">&times;</span>
+                <div id="im">
+                  <img id="modal-image1" src="https://kokalamarias.gr/kok-images/kalfidou-eleni-ethnikh-neanidwn.jpg">
+                  <img id="modal-image1" src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn.jpg">
+                </div>
+                <div id="modal-text">
+                  <h2>Εθνική ομάδα Νέων/Νεανίδων</h2>
+                
+                  <p>Αναχώρησαν σήμερα το πρωί οι αθλήτριες της ομάδας μας Καλφιδου Ελένη και Τελιούση Ιφιγένεια. Οι πρωταθλήτριες μας ταξιδεύουν αύριο Κυριακή (18/6) από την Αθήνα με την  Εθνική μας Ομάδα των Νέων / Νεανίδων, για το αντίστοιχο Παγκόσμιο πρωτάθλημα (18ο) που διεξάγεται στην αιγυπτιακή πρωτεύουσα από  21 έως 24 Ιουνίου.</p>
+                  <p>Η Καλφίδου Ελένη θα αγωνιστεί στα αγωνίσματα 400, 800, 1500, 4x100, 4x200μ επιφάνεια ενώ η Τελιούση Ιφιγένεια στα 50μ άπνοια, 50, 100, 200, 4x50, 4x100, 4x200μ επιφάνεια. </p>
+                  <p>Αξίζει να σημειωθεί ότι παρόλο ότι και οι δύο αθλήτριες είναι κατηγορία Κορασίδων και οι δύο στις μέχρι στιγμής επιδόσεις τους έχουν επιτύχει χρόνους - όρια ακόμα και για την Εθνική Γυναικών! 
+                    Η Ιφιγένεια Τελιούση έχει επιλεχτεί για να συμμετάσχει και στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών - Γυναικών τον Ιούλιο στην Ουγγαρία, ενώ η Καλφίδου Ελένη παρόλο της εξαιρετικής της επίδοσης στα 1500μ. Επιφάνειας (όριο Γυναικών) δεν μπορεί να συμμετέχει ακόμα λόγω ορίου ηλικίας.
+                    Καλή επιτυχία στις γοργόνες της Καλαμαριάς! 
+                    <br><br>
+                    Περισσότερες πληροφορίες για το Παγκόσμιο πρωτάθλημα μπορείτε να βρείτε <a href="https://koe.org.gr/article/paei-kairo-tin-kuriaki-18-6-i-ethniki-mas-omada">εδώ</a> και <a href="https://www.cmas.org/finswimming/cmas-finswimming-world-junior-championship">εδώ</a> </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
