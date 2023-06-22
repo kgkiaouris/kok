@@ -233,6 +233,9 @@ body {
   font-weight: bold;
   padding-top: 10px;
 }
+#p1 {
+  padding-top: 20px;
+}
 
 
 
@@ -437,7 +440,7 @@ body {
   #n1 {
     width: 90%;
     margin-left: 5%;
-    margin-top: 35%;
+    margin-top: 40%;
     height: 150px;
   }
   #news-image {
@@ -453,7 +456,7 @@ body {
 
   .xorhgoi {
     height: 300px;
-    margin-top: 720%;
+    margin-top: 750%;
   }
   #xorhgoi-image {
       height: 80px;
