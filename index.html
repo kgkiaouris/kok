@@ -398,8 +398,8 @@
               <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
                <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
            </div> -->
-           <img src="https://kokalamarias.gr/kok-images/kalfidou-telioush-meraprwth.jpg" id="topimg">
-           <div class="top-lezanda">ΠΡΟΚΡΙΣΗ ΣΤΟΥΣ ΤΕΛΙΚΟΥΣ ΚΑΙ ΤΗΝ ΔΕΥΤΕΡΗ ΜΕΡΑ</div>
+           <img src="https://kokalamarias.gr/kok-images/xryso-telioush.jpg" id="topimg" alt="Παγκόσμια Πρωταθλήτρια η Ιφιγένεια Τελιούση">
+           <div class="top-lezanda">ΧΡΥΣΟ ΜΕΤΑΛΛΙΟ Η ΤΕΛΙΟΥΣΗ ΣΕ ΑΤΟΜΙΚΟ ΤΗΣ ΑΓΩΝΙΣΜΑ.</div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
@@ -427,15 +427,66 @@
               <div class="modal-contenttop">
                 <span class="closetop">&times;</span>
                 <div id="imtop">
-                    <img id="modal-image2" src="https://kokalamarias.gr/kok-images/kalfidou-telioush-meraprwth.jpg">
+                    <div class="cont">
+                    <div class="slide">
+                      <img id="simg" src="https://kokalamarias.gr/kok-images/xryso-telioush.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="slide">
+                      <img id="simg" src="https://kokalamarias.gr/kok-images/telioush-me-kalfidou.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="slide">
+                      <img id="simg" src="https://kokalamarias.gr/kok-images/telioush-me-pablo.jpg" style="width:100%">
+                    </div>
+                      
+                      
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+                  </div>
+                  
+                    
+                  
+                  <script>
+                  let slideIndex = 1;
+                  showSlides(slideIndex);
+                  
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+                  
+                  function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("slide");
+                    let dots = document.getElementsByClassName("demo");
+                    let captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+                  }
+                  </script>
+                    <!--<img id="modal-image2" src="https://kokalamarias.gr/kok-images/kalfidou-telioush-meraprwth.jpg">-->
                 </div>
                 <div id="modal-top-text">
                   <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">22/6/2023</p></h2>
                 
                   
-                <p>Συνεχίζοντας την καλή της εμφάνιση η Ιφιγένεια Τελιούση προκρίθηκε σήμερα το πρωί στην 4η θέση για τον απογευματινό τελικό των 200μ. Επιφάνειας.</p>
-                  <p>Η Ελένη Καλφίδου επίσης θα αγωνιστεί στα 1500μ. Επιφανείας το απόγευμα στην γρήγορη σειρά.<br>Καλή επιτυχία σε όλη την Εθνική μας ομάδα.</p>
-                  <p>Στην φωτογραφία η Τελιούση και η Καλφίδου με τον προπονητή της ομάδας Μπάπκα Παύλο.</p>
+                  <p>Χρυσή για δεύτερη φορά η Τελιούση! Αυτή την φορά στο ατομικό της αγώνισμα 200μ. Επιφανείας κατέκτησε την πρώτη θέση στον κόσμο και ανέβηκε στο ψηλότερο σκαλί του βάθρου.</p>
+                  <p>Πολλά συγχαρητήρια και στην Καλφίδου Ελένη, η οποία κατέκτησε την 5η θέση στο αγώνισμα των 1500μ. Επιφανείας.</p>
+                  <p>Οι αγώνες συνεχίζονται αύριο και ολοκληρώνονται μεθαύριο.</p>
                 </div>
               </div>
           </div>   
@@ -456,6 +507,34 @@
 
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news">
+
+             <div id="n1">
+            <img src="https://kokalamarias.gr/kok-images/kalfidou-telioush-meraprwth.jpg" id="news-image" alt="Όρια Τεχνικής κολύμβησης OPEN">
+            <div id="news-text">Πρόκριση στους τελικούς και την δεύτερη μέρα.</div>
+            <button id="myBtn" onclick=fun()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="im">
+                  <img id="modal-image2" src="https://kokalamarias.gr/kok-images/kalfidou-telioush-meraprwth.jpg" alt="Όρια Τεχνικής κολύμβησης OPEN">
+                </div>
+                <div id="modal-text">
+                  <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">22/6/2023</p></h2>
+                
+                  <p>Συνεχίζοντας την καλή της εμφάνιση η Ιφιγένεια Τελιούση προκρίθηκε σήμερα το πρωί στην 4η θέση για τον απογευματινό τελικό των 200μ. Επιφάνειας.</p>
+                  <p>Η Ελένη Καλφίδου επίσης θα αγωνιστεί στα 1500μ. Επιφανείας το απόγευμα στην γρήγορη σειρά.<br>Καλή επιτυχία σε όλη την Εθνική μας ομάδα.</p>
+                  <p>Στην φωτογραφία η Τελιούση και η Καλφίδου με τον προπονητή της ομάδας Μπάπκα Παύλο.</p>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+            
              <div id="n1"> <img src="https://kokalamarias.gr/kok-images/xrysh-skytally.jpg"  alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
             <div id="news-text">Χρυσή η Τελιούση με την σκυταλοδρομία 4x50μ. Επιφανείας.</div>
             <button id="myBtn8" onclick=fun8()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
@@ -669,28 +748,7 @@
           </div>
           </div>
           
-          <div id="n1"><img src="https://kokalamarias.gr/kok-images/apotelesmata2-img.jpeg" id="news-image" alt="Όρια Τεχνικής κολύμβησης OPEN">
-            <div id="news-text">Οι προκριματικοί της δεύτερης ημέρας έφεραν επτά όρια για έξι αθλητές σε πέντε αγωνίσματα</div>
-            <button id="myBtn" onclick=fun()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
-            <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <div id="im">
-                  <img id="modal-image" src="https://kokalamarias.gr/kok-images/apotelesmata2-img.jpeg" alt="Όρια Τεχνικής κολύμβησης OPEN">
-                </div>
-                <div id="modal-text">
-                  <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
-                  <p>06/05/2023</p>
-                  <p id="descrpiption">ΟΡΙΑ ΚΑΙ ΡΕΚΟΡ ΣΤΟΥΣ ΠΡΟΚΡΙΜΑΤΙΚΟΥΣ ΤΗΣ ΔΕΥΤΕΡΗΣ ΗΜΕΡΑΣ:</p>
-                  <p id="descrpiption" ><b>50 Επιφάνεια Νέων: </b>Σωκράτης Ζέρντης του Γλαύκου Περιστερίου με επίδοση 16.90.</p>
-                  <p id="descrpiption" ><b>50 Επιφάνεια Νεανίδων: </b>Ιφιγένεια Τελιούση του ΚΟ Καλαμαριάς με επίδοση 19.00, Μαρία Ηλιάκη του Γλαύκου Περιστερίου, με  18.77</p>
-                 
-                  <p id="descrpiption"><b>50 Διπλά Πέδιλα Νέων: </b>Άγγελος Τσούτσης του Άλμπατρος Ιωαννίνων, με 19.94 <br><b>50 Διπλά Πέδιλα Γυναικών Νεανίδων: </b>Λυδία Παντέλογλου της Νίκης Βόλου με 22.61, Μαρία Περάκη του ΝΟ Χανίων με επίδοση 22.66.</p>
-                  <p id="descrpiption"><b>100 Υποβρύχιο Νεανίδων: </b>Μαρία Ηλιάκη του Γλαύκου Περιστερίου με επίδοση 18.77.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+         
 
 
 
