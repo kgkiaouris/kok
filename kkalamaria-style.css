@@ -375,7 +375,8 @@ body {
     font-size: 100%;
     padding-top: 8px;
     bottom: 80px;
-    z-index: -1;
+    padding: 10px;
+    z-index: 1;
   }
   #mytopBtn {
     width: 30%;
