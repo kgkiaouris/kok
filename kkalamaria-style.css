@@ -53,12 +53,13 @@ body {
   width: 70%;
   margin-left: 15%;
   height: 550px;
+  background-color: white;
  }
  #topimg {
   margin-left: 5%;
   width: 90%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
  }
  /*.slideshow-container {
    position: relative;
@@ -151,7 +152,7 @@ body {
 #modal-image2 { 
   width: 92%;
   height: 400px;
-  object-fit: cover;
+  object-fit: contain;
 }
 #modal-image1 {
   float: left; 
