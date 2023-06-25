@@ -317,6 +317,9 @@ body {
 #t1:hover, #t2:hover {
   box-shadow: 5px 5px 8px 5px #888888;
 }
+#qwer,#rewq {
+    visibility: hidden;
+  }
 
 
 @media screen and (max-width: 600px) {/*Gia kinhta, mikres o8ones */
@@ -476,6 +479,9 @@ body {
     text-align: left;
     padding: 10px;
     font-size: 90%;
+  }
+  #qwer,#rewq {
+    visibility: visible;
   }
 
 }
