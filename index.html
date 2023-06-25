@@ -398,8 +398,8 @@
               <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
                <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
            </div> -->
-           <img src="https://koe.org.gr/uploads/medium/f7526d39-f351-40a4-bde8-657aaffaf78e-ce324.jpeg" id="topimg" alt="Παγκόσμιο Πρωτάθλημα τεχνική κολύμβηση">
-           <div class="top-lezanda">ΤΡΙΤΟ ΧΡΥΣΟ ΓΙΑ ΤΕΛΙΟΥΣΗ ΚΑΙ ΠΡΩΤΟ ΓΙΑ ΤΗΝ ΚΑΛΦΙΔΟΥ ΣΤΗΝ ΣΚΥΤΑΛΟΔΡΟΜΙΑ.</div>
+           <img src="https://kokalmarias.gr/kok-images/kalfidou-xryso.jpeg" id="topimg" alt="Καλφίδου Ελένη Παγκόσμια Πρωταθλήτρια">
+           <div class="top-lezanda">ΧΡΥΣΗ ΚΑΙ Η ΚΑΛΦΙΔΟΥ ΕΛΕΝΗ ΣΤΟ ΑΤΟΜΙΚΟ ΤΗΣ ΑΓΩΝΙΣΜΑ.</div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
@@ -427,16 +427,77 @@
               <div class="modal-contenttop">
                 <span class="closetop">&times;</span>
                 <div id="imtop">
-                   
-                    <img id="modal-image2" src="https://kokalamarias.gr/kok-images/xryso-sthn-skytalh.jpg">
+                    <div class="cont">
+                    <div class="slide">
+                      <img id="simg" src="https://kokalmarias.gr/kok-images/kalfidou-xryso.jpeg" style="width:100%" alt="Καλφίδου Ελένη Παγκόσμια Πρωταθλήτρια">
+                    </div>
+                  
+                    <div class="slide">
+                      <img id="simg" src="https://kokalamarias.gr/kok-images/kalfidou-telioush-xalkino.jpg" style="width:100%" alt="Χάλκινο μετάλλιο στην σκυτάλη 4x200μ">
+                    </div>
+                  
+                    <div class="slide">
+                      <img id="simg" src="https://kokalamarias.gr/kok-images/kalfidou-telioush-pablos.jpg" style="width:100%">
+                    </div>
+                      
+                      
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+                  </div>
+                  <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("slide");
+                      let dots = document.getElementsByClassName("demo");
+                      let captionText = document.getElementById("caption");
+                      if (n > slides.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";
+                      dots[slideIndex-1].className += " active";
+                      captionText.innerHTML = dots[slideIndex-1].alt;
+                    }
+                  </script>
+                   <!-- <img id="modal-image2" src="https://kokalamarias.gr/kok-images/xryso-sthn-skytalh.jpg"> -->
                 </div>
                 <div id="modal-top-text">
-                  <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">23/6/2023</p></h2>
+                  <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">24/6/2023</p></h2>
                 
-                  <p id="p1">Τρίτο χρυσό μετάλλιο για την αθλήτρια μας Τελιούση Ιφιγένεια, αυτήν την φορά μαζί με την Καλφίδου Ελένη ως μέλη της σκυταλοδρομίας 4x200μ. Επιφανείας.</p>
-                  <p>Συγχαρητήρια στα κορίτσια που μαζί με την υπόλοιπη σκυτάλη, φτάσαν την Ελλάδα στο υψηλότερο σκαλί του βάθρου για ακόμη μια φορά στο Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων στο Κάιρο!</p>
-                  <p>Η Τελιούση συμμετείχε επίσης στον τελικό των 50μ. Επιφανείας όπου τερμάτισε στην 7η θέση.</p>
-                  <p>Οι αγώνες ολοκληρώνονται αύριο Σάββατο.</p>
+                  <p id="p1">Με τον καλύτερο δυνατό τρόπο έπεσε η αυλαία σστο Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων στο Κάιρο. Στους απογευματινούς τελικούς της τελευταίας μέρας η Καλφίδου Ελένη πάλεψε με νύχια και με δόντια για 799 μέτρα και στο τελευταίο μέτρο κυριολεκτικά κέρδισε την κούρσα των 800μ. Επιφανείας!</p>
+                  <p>Σαν βα μην έφτανε αυτό η σκυτάλη της Εθνικής μας των 4x100μ. Επιφανείας Νεανίδων με μέλη τις δυο αθλήτριες της Καλαμαριάς κατέκτησε το χάλκινο μετάλλιο.</p>
+                  <p>Πολλά συγχαρητήρια στα κορίτσια μας, σε όλα τα παιδιά της Εθνικής μας ομάδας, στους προπονητές τους, στους γονείς και σε όλους αυτούς που στηρίζουν και πιστεύουν στα νέα παιδιά!</p>
+                  <p id="qwer">Συνολικά οι επιτυχίες :
+                   <br><b>Τελιούση Ιφιγένεια</b>
+                    <ul id="rewq">
+                      <li>3 χρυσά μετάλλια (200μ., 4x200μ. και 4x50μ. Επιφανείας)</li>
+                      <li>1 χάλκινο μετάλλιο (4x100μ. Επιφανείας)</li>
+                      <li>4η θέση 100μ. Επιφανείας</li>
+                      <li>7η θέση στα 50μ. Επιφάνεια</li>
+                    </ul>
+                    <b>Καλφίδου Ελένη</b>
+                    <ul id="rewq">
+                      <li>2 χρυσά μετάλλια (800μ., 4x200μ. Επιφανείας)</li>
+                      <li>1 χάλκινο μετάλλιο (4x100μ. Επιφανείας)</li>
+                      <li>5η θέση 400μ. Επιφανείας</li>
+                      <li>5η θέση στα 1500μ. Επιφάνεια</li>
+                    </ul></p>
                 </div>
               </div>
           </div>   
@@ -457,6 +518,32 @@
 
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news">
+
+             <div id="n1"><img src="https://kokalamarias.gr/kok-images/koritsia-xryso.jpg" id="news-image">
+            <div id="news-text">Τρίτο χρυσό για την Τελιούση και πρώτο για την Καλφίδου στην σκυταλοδρομία.</div>
+            <button id="myBtn4" onclick=fun4()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal4" class="modal4">
+             <div class="modal-content4">
+                <span class="close4">&times;</span>
+                <div id="im">
+                 <img id="modal-image2" src="https://kokalamarias.gr/kok-images/xryso-sthn-skytalh.jpg">
+                </div>
+                <div id="modal-text">
+                  <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">23/6/2023</p></h2>
+                
+                  <p id="p1">Τρίτο χρυσό μετάλλιο για την αθλήτρια μας Τελιούση Ιφιγένεια, αυτήν την φορά μαζί με την Καλφίδου Ελένη ως μέλη της σκυταλοδρομίας 4x200μ. Επιφανείας.</p>
+                  <p>Συγχαρητήρια στα κορίτσια που μαζί με την υπόλοιπη σκυτάλη, φτάσαν την Ελλάδα στο υψηλότερο σκαλί του βάθρου για ακόμη μια φορά στο Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων στο Κάιρο!</p>
+                  <p>Η Τελιούση συμμετείχε επίσης στον τελικό των 50μ. Επιφανείας όπου τερμάτισε στην 7η θέση.</p>
+                  <p>Οι αγώνες ολοκληρώνονται αύριο Σάββατο.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+            
 
             <div id="n1">
             <img src="https://kokalamarias.gr/kok-images/telioush-me-kalfidou.jpg" alt="Παγκόσμιο Πρωτάθλημα τεχνική κολύμβηση" id="news-image">
@@ -487,65 +574,14 @@
 
             
 
-            <div id="n1"><img src="https://kokalamarias.gr/kok-images/xryso-telioush.jpg" id="news-image" alt="Όρια Τεχνικής κολύμβησης OPEN">
+            <div id="n1"><img src="https://kokalamarias.gr/kok-images/xryso-telioush.jpg" id="news-image" alt="Ιφιγένεια Τελιούση Παγκόσμια Πρωταθλήτρια">
             <div id="news-text">Χρυσό μετάλλιο η Τελιούση στα 200μ. Επιφανείας.</div>
           <button id="myBtn1" onclick=fun1()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
           <div id="myModal1" class="modal1">
             <div class="modal-content1">
               <span class="close1">&times;</span>
-              <div id="im">
-                <div class="cont">
-                  <div class="slide">
-                    <img id="simg" src="https://kokalamarias.gr/kok-images/xryso-telioush.jpg" style="width:100%">
-                  </div>
-                
-                  <div class="slide">
-                    <img id="simg" src="https://kokalamarias.gr/kok-images/telioush-me-kalfidou.jpg" style="width:100%">
-                  </div>
-                
-                  <div class="slide">
-                    <img id="simg" src="https://kokalamarias.gr/kok-images/telioush-me-pablo.jpg" style="width:100%">
-                  </div>
-                    
-                    
-                  <a class="prev" onclick="plusSlides(-1)">❮</a>
-                  <a class="next" onclick="plusSlides(1)">❯</a>
-                
-                </div>
-                <script>
-                  let slideIndex = 1;
-                  showSlides(slideIndex);
-                  
-                  function plusSlides(n) {
-                    showSlides(slideIndex += n);
-                  }
-                  
-                  function currentSlide(n) {
-                    showSlides(slideIndex = n);
-                  }
-                  
-                  function showSlides(n) {
-                    let i;
-                    let slides = document.getElementsByClassName("slide");
-                    let dots = document.getElementsByClassName("demo");
-                    let captionText = document.getElementById("caption");
-                    if (n > slides.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = slides.length}
-                    for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                      dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[slideIndex-1].style.display = "block";
-                    dots[slideIndex-1].className += " active";
-                    captionText.innerHTML = dots[slideIndex-1].alt;
-                  }
-                </script>
-                  
-                
-               
-                <!--<img id="modal-image" src="https://kokalamarias.gr/kok-images/apotelesmata3-img.jpeg" alt="Όρια Τεχνικής κολύμβησης OPEN">-->
+              <div id="im">     
+                <img id="modal-image2" src="https://kokalamarias.gr/kok-images/teliouh-me-pablo.jpg" alt="Ιφιγένεια Τελιούση Παγκόσμια Πρωταθλήτρια">
             </div>
             <div id="modal-text">
               <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">22/6/2023</p></h2>
@@ -723,39 +759,7 @@
             </div>
           </div>
 
-          
-
-
-
-
-
-
-           <div id="n1"><img src="https://kokalamarias.gr/kok-images/top-agwnwn-img.jpg" id="news-image">
-            <div id="news-text">Οι κορυφαίοι των Αγώνων</div>
-            <button id="myBtn4" onclick=fun4()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
-            <div id="myModal4" class="modal4">
-             <div class="modal-content4">
-                <span class="close4">&times;</span>
-                <div id="im">
-                 <img id="modal-image" src="https://kokalamarias.gr/kok-images/top-agwnwn-img.jpg">
-                </div>
-                <div id="modal-text">
-                 <h2>Πανελλήνιο Πρωτάθλημα ΟΠΕΝ Τεχνικής Κολύμβησης</h2>
-                 <p>07/05/2023</p>
-                 
-                 <p id="descrpiption" >Καλύτερος αθλητής του Εθνικού Πρωταθλήματος αναδείχθηκε ο Γιώργος Καλτσουκαλάς των Δελφινιών Περιστερίου με την επίδοση του στα 100μ. επιφάνεια, 34.65, συγκεντρώνοντας 967 βαθμούς σύμφωνα με την βαθμολογία της Παγκόσμιας Ομοσπονδίας.
-
-                  <br></p>
-                  <p id="descrpiption" >Καλύτερη αθλήτρια των αγώνων ήταν η Αθανασία Καρατσιβή της Νίκης Βόλου με την επίδοση της στα 800μ. επιφάνεια, 7:01.15, συγκεντρώνοντας 967 βαθμούς σύμφωνα με την βαθμολογία της Παγκόσμιας Ομοσπονδίας.</p>
-                </div>
-              </div>
-            </div>
-          </div>          
-         
-
-
-
-          
+    
 
 
         </div>
