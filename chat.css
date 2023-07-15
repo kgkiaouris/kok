@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+/* Dashboard section */
+.dashboard-content {
+    /* Add styles for your dashboard content */
+}
+
+/* Members section */
+.members-content {
+    /* Add styles for your members content */
+}
+
+/* Projects section */
+.projects-content {
+    /* Add styles for your projects content */
+}
+
+/* Tasks section */
+.tasks-content {
+    /* Add styles for your tasks content */
+}
+
+/* Settings section */
+.settings-content {
+    /* Add styles for your settings content */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

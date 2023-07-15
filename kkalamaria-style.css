@@ -17,6 +17,10 @@ body {
     float: right;
     margin-right: 200px;
    }
+   #name {
+    color: white;
+    
+   }
    #myNavbar {
     padding-top: 15px;
 
@@ -294,6 +298,11 @@ body {
     .navbar-inverse {
       width: 100%;
     }
+    #name {
+      padding: 0;
+    margin-top: 2%;
+    margin-left: -10%;
+    }
     #myNavbar {
       background-color: rgb(1, 1, 57);
       margin-top: 0;
@@ -324,7 +333,7 @@ body {
     .top-new {
       width: 100%;
       margin-left: 0;
-      height: 400px;
+      height: 300px;
     }
     .top-lezanda {
       height: 60px;
