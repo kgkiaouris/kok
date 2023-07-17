@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
       
@@ -10,11 +10,68 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://kokalamarias.gr/kkalamaria-style.css">
+      <link rel="stylesheet" href="./kkalamaria-style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      
+      <style>
+
+
+.slide {
+  display: none;
+}
+#simg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.cont {
+  width: 90%;
+  margin-top: 4%;
+  height: 400px;
+  position: relative;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .cont {
+    width: 100%;
+    height: 220px;
+  }
+  #simg {
+    height: 220px;
+  }
+  .prev,
+.next {
+  top: 60%;
+}
+}
+      </style>
       <script>
         function funtop(){
                 var modal = document.getElementById("myModaltop");
@@ -128,7 +185,7 @@
                    }
                 }
             }
-          function fun6(){
+            function fun6(){
                 var modal = document.getElementById("myModal6");
                 var btn = document.getElementById("myBtn6");
                 var span = document.getElementsByClassName("close6")[0];
@@ -146,10 +203,31 @@
             }
       </script>
       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var modal = document.getElementById("myModal8");
+          var btn = document.getElementById("myBtn8");
+          var span = document.getElementsByClassName("close8")[0];
+      
+          btn.onclick = function () {
+            modal.style.display = "block";
+          };
+      
+          span.onclick = function () {
+            modal.style.display = "none";
+          };
+      
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        });
+</script>
+      <script>
               document.addEventListener("DOMContentLoaded", function () {
-                var modal = document.getElementById("myModal8");
-                var btn = document.getElementById("myBtn8");
-                var span = document.getElementsByClassName("close8")[0];
+                var modal = document.getElementById("myModal7");
+                var btn = document.getElementById("myBtn7");
+                var span = document.getElementsByClassName("close7")[0];
             
                 btn.onclick = function () {
                   modal.style.display = "block";
@@ -166,27 +244,6 @@
                 };
               });
       </script>
-         <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          var modal = document.getElementById("myModal6");
-          var btn = document.getElementById("myBtn6");
-          var span = document.getElementsByClassName("close6")[0];
-      
-          btn.onclick = function () {
-            modal.style.display = "block";
-          };
-      
-          span.onclick = function () {
-            modal.style.display = "none";
-          };
-      
-          window.onclick = function (event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
-            }
-          };
-        });
-            </script>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           var modal = document.getElementById("myModal6");
@@ -235,6 +292,27 @@
           var modal = document.getElementById("myModal4");
           var btn = document.getElementById("myBtn4");
           var span = document.getElementsByClassName("close4")[0];
+      
+          btn.onclick = function () {
+            modal.style.display = "block";
+          };
+      
+          span.onclick = function () {
+            modal.style.display = "none";
+          };
+      
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        });
+      </script>
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var modal = document.getElementById("myModalx");
+          var btn = document.getElementById("myBtnx");
+          var span = document.getElementsByClassName("closex")[0];
       
           btn.onclick = function () {
             modal.style.display = "block";
@@ -392,18 +470,18 @@
             </div>
         </nav>
         <div class="top-new">
-            <!--  <div class="slideshow-container">
-               <img src="https://kokalamarias.gr/kok-images/kalfidou-eleni-ethnikh-neanidwn.jpg" alt="Καλφίδου Ελένη Εθνική ομάδα τεχνικής κολύμβησης">
-               <img src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn.jpg"alt="Τελιούση Ιφιγένεια Εθνική ομάδα τεχνικής κολύμβησης">
-              <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+              <!-- <div class="slideshow-container">
+               <img src="https://kokalamarias.gr/kok-images/kalfidou-eleni-ethnikh-neanidwn.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+               <img src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+             <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
                <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
            </div> -->
-           <img src="https://kokalamarias.gr/kok-images/kalfidou-xryso.jpeg" id="topimg" alt="Καλφίδου Ελένη Παγκόσμια Πρωταθλήτρια">
-           <div class="top-lezanda">ΧΡΥΣΗ ΚΑΙ Η ΚΑΛΦΙΔΟΥ ΕΛΕΝΗ ΣΤΟ ΑΤΟΜΙΚΟ ΤΗΣ ΑΓΩΝΙΣΜΑ.</div>
+           <img src="./european.jpg" id="topimg">
+            <div class="top-lezanda">ΠΑΝΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΑΝΔΡΩΝ/ΓΥΝΑΙΚΩΝ</div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
-           <!-- <script>
+          <!--  <script>
        
         function startSlideshow() {
             var slideshowImages = document.querySelectorAll('.slideshow-container img');
@@ -420,14 +498,78 @@
             setInterval(transitionSlides, 3000);
         }
         startSlideshow();
-        </script> -->
+        </script>-->
         
 
             <div id="myModaltop" class="modaltop">
               <div class="modal-contenttop">
                 <span class="closetop">&times;</span>
                 <div id="imtop">
-                    <div class="cont">
+                
+                  <img id="modal-image2" src="./european.jpg">
+                </div>
+                <div id="modal-top-text">
+                  <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">15/7  /2023</p></h2>
+                
+                  <p id="p1">Με 13 αθλητές και αθλήτριες αναχωρεί την Δευτέρα (17/7, 10.35) στη Βουδαπέστη, η Εθνική μας ομάδα Τεχνικής κολύμβησης Ανδρών – Γυναικών που θα μετάσχει (19-22 Ιουλίου) στο αντίστοιχο Ευρωπαϊκό πρωτάθλημα που διεξάγεται στην πόλη Γκόντολο (30χλμ από την ουγγρική πρωτεύουσα).</p>
+                  <div class="hid">
+                  <p>Στην αποστολή μετέχουν οι αθλητές:</p>
+                  <p>Αρμουτσής Μάριος, Καλτσουκαλάς Γεώργιος, Ηλίας Καλφίδης, Παναγιωτίδης Γεώργιος, Μυλωνάκης Αναστάσιος, Τσιάβος Κωνσταντίνος.</p>
+                  <p>Και οι αθλήτριες:</p>
+                  <p>Καρατσιβή Αθανασία, Τσιγκόια Βασιλεία, Τελιούση Ιφιγένεια, Καπέρδα Γιολάντα, Περάκη Γεωργία, Παντέλογλου Λυδία, Παπάζογλου Μαρία.</p>
+                  </div>
+                  <p id="qwer">
+                   <br>Στην αποστολή συμμετέχουν οι αθλητές:
+                    <ul id="rewq">
+                      <li><b>Αρμουτσής Μάριος (ΚΟ Καλαμαριάς)</b>: 1500 – 800 – 4χ200 Επιφάνεια</li>
+                      <li><b>Καλφίδης Ηλίας (ΚΟ Καλαμαριάς)</b>:  400 – 800 – 1500 - 4χ100 - 4χ200 Επιφάνεια</li>
+                      <li><b>Παναγιωτίδης Γιώργος (ΚΟ Καλαμαριάς)</b>: 100 - 4χ100 Επιφάνεια, 50 Άπνοια, 100 υποβρύχιο</li>
+                      <li>Καλτσουκαλάς Γιώργος (Δελφίνια Περιστερίου):  50 - 100 Επιφάνεια, 50 Άπνοια,  400 Υποβρύχιο, 4χ50 – 4χ100 - 4χ200 Επιφάνεια, 4χ100 Διπλά Πέδιλα</li>
+                      <li>Μυλωνάκης Αναστάσιος (ΑΝΟ Αργυρούπολης):  50 - 4χ50 – 4χ100 - 4χ200 Επιφάνεια</li>
+                      <li>Τσιάβος Κωνσταντίνος (ΑΕ Χαϊδαρίου):  100 – 400 Υποβρύχιο, 4χ100 Διπλά Πέδιλα</li>
+                    </ul>
+                    Οι αθλήτριές:
+                    <ul id="rewq">
+                      <li>Καρατσιβή Αθανασία (Νίκη Βόλου): 400 – 800 – 1500 - 4χ100 – 4χ200 Επιφάνεια</li>
+                      <li>Τσιγκόϊα Βασιλεία (ΙΟ Θεσ/νικης):  50 - 100 - 4χ50 – 4χ100 – 4χ200 Επιφάνεια, 50 Άπνοια</li>
+                      <li><b>Τελιούση Ιφιγένεια  (ΚΟ Καλαμαριάς): 50 - 100 – 200 - 4χ50 – 4χ100 – 4χ200 Επιφάνεια, 50 Άπνοια</li>
+                      <li>Καπέρδα Γιολάντα (Άλμπατρος Ιωαννίνων): 100 – 200 – 400 - 4χ100 Διπλά Πέδιλα</li>
+                      <li>Περάκη Γεωργία (ΝΟ Χανίων): 50 – 100 - 4χ100 Διπλά Πέδιλα - 4χ100 – 4χ200  Επιφάνεια</li>
+                      <li>Παντελόγλου Λυδία (Νίκη Βόλου): 50 Διπλά Πέδιλα – 100 Υποβρύχιο</li>
+                      <li>Παπάζογλου Μαρία (Άρης Θεσ/νικης): 200 – 400 Διπλά Πέδιλα</li>
+                    </ul></p>
+                    
+                
+                </div>
+              </div>
+          </div>   
+        </div>
+        
+        <div class="titlos-tmhmata">ΤΜΗΜΑΤΑ</div>
+        <div class="Tmhmata">
+         
+          <div id="t1">
+            <a href="https://kokalamarias.gr/kalamaria-klasikh"><img id="tmhmata-image" src="https://kokalamarias.gr/kok-images/klasikh-img.jpeg" alt="Κλασική Κολύμβηση Καλαμαριά"></a>
+              <h5>ΚΛΑΣΙΚΗ ΚΟΛΥΜΒΗΣΗ</h5>
+          </div>
+          <div id="t2">
+            <a href="https://kokalamarias.gr/kalamaria-texnikh.html"><img id="tmhmata-image" src="https://kokalamarias.gr/kok-images/texnikh-img.jpeg" alt="Τεχνική Κολύμβηση Καλαμαριά"></a>
+            <h5>ΤΕΧΝΙΚΗ ΚΟΛΥΜΒΗΣΗ</h5>
+            </div>
+        </div>
+
+        <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
+        <div class="news"> 
+
+           
+          <div id="n1"><img src="https://kokalamarias.gr/kok-images/kalfidou-xryso.jpeg" alt="Καλφίδου Ελένη Παγκόσμια Πρωταθλήτρια" id="news-image">
+            <div id="news-text">Χρυσή και η Καλφίδου Ελένη στο ατομικό της αγώνισμα.</div>
+            <button id="myBtnx" onclick=funx()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModalx" class="modalx">
+             <div class="modal-contentx">
+                <span class="closex">&times;</span>
+                <div id="im">
+                  <div class="cont">
                     <div class="slide">
                       <img id="simg" src="https://kokalamarias.gr/kok-images/kalfidou-xryso.jpeg" style="width:100%" alt="Καλφίδου Ελένη Παγκόσμια Πρωταθλήτρια">
                     </div>
@@ -475,9 +617,8 @@
                       captionText.innerHTML = dots[slideIndex-1].alt;
                     }
                   </script>
-                   <!-- <img id="modal-image2" src="https://kokalamarias.gr/kok-images/xryso-sthn-skytalh.jpg"> -->
                 </div>
-                <div id="modal-top-text">
+                <div id="modal-text">
                   <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">24/6/2023</p></h2>
                 
                   <p id="p1">Με τον καλύτερο δυνατό τρόπο έπεσε η αυλαία στο Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων στο Κάιρο. Στους απογευματινούς τελικούς της τελευταίας μέρας η Καλφίδου Ελένη πάλεψε με νύχια και με δόντια για 799 μέτρα και στο τελευταίο μέτρο κυριολεκτικά κέρδισε την κούρσα των 800μ. Επιφανείας!</p>
@@ -500,33 +641,19 @@
                     </ul></p>
                 </div>
               </div>
-          </div>   
-        </div>
-        
-        <div class="titlos-tmhmata">ΤΜΗΜΑΤΑ</div>
-        <div class="Tmhmata">
-         
-          <div id="t1">
-            <a href="https://kokalamarias.gr/kalamaria-klasikh"><img id="tmhmata-image" src="https://kokalamarias.gr/kok-images/klasikh-img.jpeg" alt="Κλασική Κολύμβηση Καλαμαριά"></a>
-              <h5>ΚΛΑΣΙΚΗ ΚΟΛΥΜΒΗΣΗ</h5>
-          </div>
-          <div id="t2">
-            <a href="https://kokalamarias.gr/kalamaria-texnikh.html"><img id="tmhmata-image" src="https://kokalamarias.gr/kok-images/texnikh-img.jpeg" alt="Τεχνική Κολύμβηση Καλαμαριά"></a>
-            <h5>ΤΕΧΝΙΚΗ ΚΟΛΥΜΒΗΣΗ</h5>
             </div>
-        </div>
+          </div>
 
-        <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
-        <div class="news">
 
-             <div id="n1"><img src="https://kokalamarias.gr/kok-images/koritsia-xryso.jpg" id="news-image">
+          
+          <div id="n1"><img src="./xryso-telioush.jpg" id="news-image">
             <div id="news-text">Τρίτο χρυσό για την Τελιούση και πρώτο για την Καλφίδου στην σκυταλοδρομία.</div>
             <button id="myBtn4" onclick=fun4()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal4" class="modal4">
              <div class="modal-content4">
                 <span class="close4">&times;</span>
                 <div id="im">
-                 <img id="modal-image2" src="https://kokalamarias.gr/kok-images/xryso-sthn-skytalh.jpg">
+                 <img id="modal-image2" src="./xryso-sthn-skytalh.jpg">
                 </div>
                 <div id="modal-text">
                   <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">23/6/2023</p></h2>
@@ -539,13 +666,9 @@
               </div>
             </div>
           </div>
-
-
-
-
-            
-
-            <div id="n1">
+          
+          
+          <div id="n1">
             <img src="https://kokalamarias.gr/kok-images/telioush-me-kalfidou.jpg" alt="Παγκόσμιο Πρωτάθλημα τεχνική κολύμβηση" id="news-image">
             <div id="news-text">Άλλες δύο προκρίσεις σε τελικούς στο Κάιρο.</div>
             <button id="myBtn3" onclick=fun3()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
@@ -569,19 +692,16 @@
             </div>
           </div>
           
-
-
-
-            
-
-            <div id="n1"><img src="https://kokalamarias.gr/kok-images/xryso-telioush.jpg" id="news-image" alt="Ιφιγένεια Τελιούση Παγκόσμια Πρωταθλήτρια">
+          
+          
+          <div id="n1"><img src="https://kokalamarias.gr/kok-images/xryso-telioush.jpg" id="news-image" alt="Όρια Τεχνικής κολύμβησης OPEN">
             <div id="news-text">Χρυσό μετάλλιο η Τελιούση στα 200μ. Επιφανείας.</div>
           <button id="myBtn1" onclick=fun1()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
           <div id="myModal1" class="modal1">
             <div class="modal-content1">
               <span class="close1">&times;</span>
-              <div id="im">     
-                <img id="modal-image2" src="https://kokalamarias.gr/kok-images/telioush-me-pablo.jpg" alt="Ιφιγένεια Τελιούση Παγκόσμια Πρωταθλήτρια">
+              <div id="im">
+                <img id="modal-image2" src="https://kokalamarias.gr/kok-images/telioush-me-pablo.jpg" alt="Όρια Τεχνικής κολύμβησης OPEN">
             </div>
             <div id="modal-text">
               <h2>Παγκόσμιο Πρωτάθλημα Νέων/Νεανίδων<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">22/6/2023</p></h2>
@@ -595,9 +715,8 @@
           </div>
 
 
-            
 
-             <div id="n1">
+          <div id="n1">
             <img src="https://kokalamarias.gr/kok-images/kalfidou-telioush-meraprwth.jpg" id="news-image" alt="Όρια Τεχνικής κολύμβησης OPEN">
             <div id="news-text">Πρόκριση στους τελικούς και την δεύτερη μέρα.</div>
             <button id="myBtn" onclick=fun()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
@@ -619,12 +738,7 @@
             </div>
           </div>
 
-
-
-
-
-            
-             <div id="n1"> <img src="https://kokalamarias.gr/kok-images/xrysh-skytally.jpg"  alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
+          <div id="n1"> <img src="https://kokalamarias.gr/kok-images/xrysh-skytally.jpg"  alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
             <div id="news-text">Χρυσή η Τελιούση με την σκυταλοδρομία 4x50μ. Επιφανείας.</div>
             <button id="myBtn8" onclick=fun8()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal8" class="modal8">
@@ -651,9 +765,10 @@
 
 
 
-            
 
-          <div id="n1"><img src="https://kokalamarias.gr/kok-images/cairo-agwnes.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
+
+
+          <div id="n1"><img src="C:\Users\παοκια\Desktop\Κολυμβητικός Όμιλος Καλαμαριάς\cairo-agwnes.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
             <div id="news-text">Προκρίσεις στους τελικούς για τις δύο αθλήτριές μας.</div>
             <button id="myBtn7" onclick=fun7()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal7" class="modal7">
@@ -675,14 +790,12 @@
                 </div>
               </div>
             </div>
-          </div> 
+          </div>
 
 
 
 
-            
-
-             <div id="n1"><img src="https://kokalamarias.gr/kok-images/anaxwrhsh-koritsiwn.jpg" alt="Εθνική ομάδα Νέων/Νεανίδων" id="news-image">
+          <div id="n1"><img src="C:\Users\παοκια\Desktop\Κολυμβητικός Όμιλος Καλαμαριάς\anaxwrhsh-koritsiwn.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
             <div id="news-text">Αναχωρούν οι αθλήτριές μας για την αποστολή της Εθνικής ομάδας.</div>
             <button id="myBtn6" onclick=fun6()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal6" class="modal6">
@@ -705,9 +818,9 @@
                 </div>
               </div>
             </div>
-          </div> 
-            
-         <div id="n1"><img src="https://koe.org.gr/uploads/medium/37237356259208974887059509446192900341760n-ba2d5-e74d7.jpg" alt="Εθνικές ομάδες Τεχνική κολύμβηση" id="news-image">
+          </div>
+          
+          <div id="n1"><img src="https://koe.org.gr/uploads/medium/37237356259208974887059509446192900341760n-ba2d5-e74d7.jpg" alt="Εθνικές ομάδες Τεχνική κολύμβηση" id="news-image">
             <div id="news-text">Ως μέλη της Εθνικής Ομάδας θα είναι και φέτος αθλητές και αθλήτριες της ομάδας μας. </div>
             <button id="myBtn2" onclick=fun2()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal2" class="modal2">
@@ -737,8 +850,9 @@
 
 
 
+
           <div id="n1"><img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση" id="news-image">
-            <div id="news-text">Πρωταθλήτρια ομάδα για δεύτερη συνεχόμενη φορά ο Κολυμβητικός όμιλος Καλαμαριάς</div>
+            <div id="news-text">Πρωταθλήτρια ομάδα για δεύτερη συνεχόμενη φορά ο Κολυμβητικός όμιλος Καλαμαριάς.</div>
             <button id="myBtn5" onclick=fun5()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal5" class="modal5">
              <div class="modal-content5">
@@ -759,7 +873,27 @@
             </div>
           </div>
 
-    
+          
+
+
+
+
+
+
+           
+
+          
+          
+          
+
+         
+          
+         
+         
+       
+
+
+          
 
 
         </div>
