@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .selected {
+      opacity: 0.5; /* Add any desired styling for selected areas */
+    }
+  </style>
+  <script>
+    function applyColor(color, areaId) {
+      var area = document.getElementById(areaId);
+      area.style.backgroundColor = color;
+    }
+  </script>
+</head>
+<body>
+  <img src="your-image.jpg" usemap="#imagemap">
+
+  <map name="imagemap">
+    <area shape="rect" coords="x1,y1,x2,y2" id="area1" onclick="applyColor('#ff0000', 'area1')">
+    <area shape="rect" coords="x3,y3,x4,y4" id="area2" onclick="applyColor('#00ff00', 'area2')">
+    <!-- Add more areas as needed -->
+  </map>
+</body>
+</html>
