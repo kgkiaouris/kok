@@ -459,6 +459,27 @@
             }
           });
       </script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+              var modal = document.getElementById("myModal15");
+              var btn = document.getElementById("myBtn15");
+              var span = document.getElementsByClassName("close15")[0];
+              
+              btn.onclick = function() {
+                modal.style.display = "block";
+              }
+              
+              span.onclick = function() {
+                modal.style.display = "none";
+              }
+              
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+            });
+        </script>
         
     </head>
     <body>
@@ -490,18 +511,19 @@
               </div>
             </div>
         </nav>
-        <div class="top-new">
-               <div class="slideshow-container">
-               <img src="./kok-images/panagiotidis.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-               <img src="./kok-images/kalfidis.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-             <img src="./kok-images/telioush-paneuropaiko.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-           </div> 
-          <!-- <img src="./kok-images/european.jpg" id="topimg">-->
+        <div class="top-new"> 
+         <img src="./kok-images/if-pan-kalf-mar-pab.jpeg" id="topimg">
+            <!--     <div class="slideshow-container">
+               <img src="./kok-images/panagiotidis.jpg" alt="Παναγιωτίδης Γεώργιος">
+               <img src="./kok-images/kalfidis.jpg" alt="Καλφίδης Ηλίας">
+             <img src="./kok-images/telioush-paneuropaiko.jpg" alt="Τελιούση Ιφιγένεια">
+           </div> -->
+         
             <div class="top-lezanda">ΠΑΝΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΑΝΔΡΩΝ/ΓΥΝΑΙΚΩΝ</div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
-          <script>
+        <!--  <script>
        
         function startSlideshow() {
             var slideshowImages = document.querySelectorAll('.slideshow-container img');
@@ -518,7 +540,7 @@
             setInterval(transitionSlides, 3000);
         }
         startSlideshow();
-        </script>
+        </script>-->
         
 
             <div id="myModaltop" class="modaltop">
@@ -526,15 +548,15 @@
                 <span class="closetop">&times;</span>
                 <div id="imtop">
                 
-                  <img id="modal-image2" src="./kok-images/ethnikh-andrwn-gynaikwn.jpg">
+                  <img id="modal-image2" src="./kok-images/telioush-xryso-andrwn.jpeg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
                 </div>
                 <div id="modal-top-text">
                   <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">19/7/2023</p></h2>
                 
-                  <p id="p1">Με το "δεξί" ξεκίνησε σήμερα η παρουσία των αθλητών μας στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών στην Ουγγαρία.</p>
-                  <p>Ο Παναγιωτίδης Γεώργιος προκρίθηκε στον απογευματινό τελικό των 100μ. Επιφανείας με τον 5ο καλύτερο χρόνο. <br> Ο Καλφίδης Ηλίας προκρίθηκε επίσης στον τελικό των 400μ. Επιφανείας με τον 7ο καλύτερο χρόνο.</p>
-                  <p>Τέλος η μικρή μας Ιφιγένεια Τελιούση προκρίθηκε με την σκυταλοδρομία 4x50μ. Επιφανείας με τον δεύτερο καλύτερο χρόνο στον απογευματινό τελικό, ενώ στο ατομικό της αγώνισμα κατέκτησε την 10η θέση και βρέθηκε για λίγο εκτός τελικού.</p>
-                  <p>Καλή επιτυχία σε όλα τα παιδιά! Τους αγώνες μπορείτε να τους παρακολουθήσετε <a href="https://www.youtube.com/live/tz5ZCOuJqRk?feature=share">εδω</a> </p>
+                  <p id="p1">Χρυσή η Τελιούση Ιφιγένεια με την σκυταλοδρομία 4x50μ. Επιφανείας Ανδρών/Γυναικών μαζί με τους Μυλωνάκης,Καλτσουκαλάς,Τσιγκόια.</p>
+                  <p>4ος ο Παναγιωτίδης Γεώργιος στον τελικό των 100μ. Επιφανείας Ανδρών! <br> 7ος ο Καλφίδης Ηλίας στα 400μ. Επιφανείας Ανδρών!</p>
+                  <p>Πολλά συγχαρητήρια στους αθλήτες/αθλήτριες μας καθώς και σε όλα τα παιδιά. Συγχαρητήρια επίσης και στους προπονητές της ομάδας Βίκη Τσίκλη και Μπάπκα Παύλο που για ακόμη μια φόρα είναι δίπλα στα παιδία και τα στηρίζουν έμπρακτα σε κάθες τους βήμα.</p>
+                  <p>Καλή σύνεχεια στις υπόλοιπες αγωνιστικές. Οι αγώνες συνεχίζονται αύριο Πέμπτη (20/07) <a href="https://www.youtube.com/live/dGsgfzpIPK8?feature=share">εδω</a> </p>
                     
                 
                 </div>
@@ -558,14 +580,38 @@
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news"> 
 
-          <div id="n1-top"><img src="./kok-images/european.jpg" id="news-image">
+          <div id="n1-top"><img src="./kok-images/ethnikh-andrwn-gynaikwn.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+            <div id="news-text">Προκρίσεις σε τελικούς στην πρώτη μέρα του Πανευρωπαϊκού πρωταθλήματος.</div>
+            <button id="myBtn15" onclick=fun14()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal15" class="modal15">
+             <div class="modal-content15">
+                <span class="close15">&times;</span>
+                <div id="im">
+                 <img id="modal-image2" src="./kok-images/european.jpg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                </div>
+                <div id="modal-text">
+                  <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">19/7/2023</p></h2>
+                
+                  <p id="p1">Με το "δεξί" ξεκίνησε σήμερα η παρουσία των αθλητών μας στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών στην Ουγγαρία.</p>
+                  <p>Ο Παναγιωτίδης Γεώργιος προκρίθηκε στον απογευματινό τελικό των 100μ. Επιφανείας με τον 5ο καλύτερο χρόνο. <br> Ο Καλφίδης Ηλίας προκρίθηκε επίσης στον τελικό των 400μ. Επιφανείας με τον 7ο καλύτερο χρόνο.</p>
+                  <p>Τέλος η μικρή μας Ιφιγένεια Τελιούση προκρίθηκε με την σκυταλοδρομία 4x50μ. Επιφανείας με τον δεύτερο καλύτερο χρόνο στον απογευματινό τελικό, ενώ στο ατομικό της αγώνισμα κατέκτησε την 10η θέση και βρέθηκε για λίγο εκτός τελικού.</p>
+                  <p>Καλή επιτυχία σε όλα τα παιδιά! Τους αγώνες μπορείτε να τους παρακολουθήσετε <a href="https://www.youtube.com/live/tz5ZCOuJqRk?feature=share">εδω</a> </p>
+                    
+                
+             
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="n1"><img src="./kok-images/european.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
             <div id="news-text">Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών.</div>
             <button id="myBtn14" onclick=fun14()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal14" class="modal14">
              <div class="modal-content14">
                 <span class="close14">&times;</span>
                 <div id="im">
-                 <img id="modal-image2" src="./kok-images/european.jpg">
+                 <img id="modal-image2" src="./kok-images/european.jpg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
                 </div>
                 <div id="modal-text">
                   <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">15/7/2023</p></h2>
