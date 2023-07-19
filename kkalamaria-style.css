@@ -217,7 +217,7 @@ body {
   margin-left: 12.5%;
   margin-top: -5%;
 }
-#n1 {
+#n1 ,#n1-top{
   width: 30%;
   margin-left: 2.5%;
   height: 250px;
@@ -672,14 +672,17 @@ body {
     margin-left: 0;
     margin-top: -25%;
   }
-  #n1 {
+  #n1,#n1-top {
     width: 90%;
     margin-left: 5%;
     margin-top: 55%;
     height: 120px;
   }
+  #n1-top {
+    margin-top: 30%;
+  }
   #news-image {
-    height: 220px ;
+    height: 200px ;
   }
   #myBtn,#myBtn1,#myBtn2,#myBtn14,#myBtn3,#myBtn4,#myBtn5,#myBtnx,#myBtn6,#myBtn7,#myBtn8{
   
