@@ -595,8 +595,8 @@ body {
 
   .top-new {
     width: 100%;
-    margin-left: 0;
-    height: 220px;
+    margin-left: 0%;
+    height: 250px;
     
   }
   .top-lezanda {
@@ -611,6 +611,8 @@ body {
   }
   #mytopBtn {
     width: 30%;
+    height: 40px;
+    font-size: smaller;
     margin-top: -20%;
     margin-left: 35%;
   }
@@ -680,13 +682,16 @@ body {
     height: 150px ;
   }
   #myBtn,#myBtn1,#myBtn2,#myBtn14,#myBtn3,#myBtn4,#myBtn5,#myBtnx,#myBtn6,#myBtn7,#myBtn8{
-    width: 40%;
-    margin-left: 23%;
+  
+    width: 30%;
+    height: 40px;
+    font-size: smaller;
+    margin-left: 30%;
   }
 
   .xorhgoi {
     height: 300px;
-    margin-top: 950%;
+    margin-top: 980%;
   }
   #xorhgoi-image {
       height: 80px;
