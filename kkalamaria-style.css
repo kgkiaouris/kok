@@ -675,11 +675,11 @@ body {
   #n1 {
     width: 90%;
     margin-left: 5%;
-    margin-top: 40%;
-    height: 150px;
+    margin-top: 55%;
+    height: 120px;
   }
   #news-image {
-    height: 150px ;
+    height: 220px ;
   }
   #myBtn,#myBtn1,#myBtn2,#myBtn14,#myBtn3,#myBtn4,#myBtn5,#myBtnx,#myBtn6,#myBtn7,#myBtn8{
   
@@ -691,7 +691,7 @@ body {
 
   .xorhgoi {
     height: 300px;
-    margin-top: 980%;
+    margin-top: 1010%;
   }
   #xorhgoi-image {
       height: 80px;
