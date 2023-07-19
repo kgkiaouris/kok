@@ -246,6 +246,27 @@
       </script>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
+          var modal = document.getElementById("myModal14");
+          var btn = document.getElementById("myBtn14");
+          var span = document.getElementsByClassName("close14")[0];
+      
+          btn.onclick = function () {
+            modal.style.display = "block";
+          };
+      
+          span.onclick = function () {
+            modal.style.display = "none";
+          };
+      
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        });
+</script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
           var modal = document.getElementById("myModal6");
           var btn = document.getElementById("myBtn6");
           var span = document.getElementsByClassName("close6")[0];
@@ -470,18 +491,17 @@
             </div>
         </nav>
         <div class="top-new">
-              <!-- <div class="slideshow-container">
-               <img src="https://kokalamarias.gr/kok-images/kalfidou-eleni-ethnikh-neanidwn.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-               <img src="https://kokalamarias.gr/kok-images/telioush-ifigenia-ethnikh-neanidwn.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-             <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-               <img src="https://kokalamarias.gr/kok-images/kok-prwtathlhtes2-img.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
-           </div> -->
-           <img src="./kok-images/european.jpg" id="topimg">
+               <div class="slideshow-container">
+               <img src="./kok-images/panagiotidis.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+               <img src="./kok-images/kalfidis.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+             <img src="./kok-images/telioush-paneuropaiko.jpg" alt="Πρωταθλητες Τεχνικη κολύμβηση">
+           </div> 
+          <!-- <img src="./kok-images/european.jpg" id="topimg">-->
             <div class="top-lezanda">ΠΑΝΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΑΝΔΡΩΝ/ΓΥΝΑΙΚΩΝ</div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
-          <!--  <script>
+          <script>
        
         function startSlideshow() {
             var slideshowImages = document.querySelectorAll('.slideshow-container img');
@@ -498,7 +518,7 @@
             setInterval(transitionSlides, 3000);
         }
         startSlideshow();
-        </script>-->
+        </script>
         
 
             <div id="myModaltop" class="modaltop">
@@ -506,9 +526,48 @@
                 <span class="closetop">&times;</span>
                 <div id="imtop">
                 
-                  <img id="modal-image2" src="./kok-images/european.jpg">
+                  <img id="modal-image2" src="./kok-images/ethnikh-andrwn-gynaikwn.jpg">
                 </div>
                 <div id="modal-top-text">
+                  <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">19/7/2023</p></h2>
+                
+                  <p id="p1">Με το "δεξί" ξεκίνησε σήμερα η παρουσία των αθλητών μας στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών στην Ουγγαρία.</p>
+                  <p>Ο Παναγιωτίδης Γεώργιος προκρίθηκε στον απογευματινό τελικό των 100μ. Επιφανείας με τον 5ο καλύτερο χρόνο. <br> Ο Καλφίδης Ηλίας προκρίθηκε επίσης στον τελικό των 400μ. Επιφανείας με τον 7ο καλύτερο χρόνο.</p>
+                  <p>Τέλος η μικρή μας Ιφιγένεια Τελιούση προκρίθηκε με την σκυταλοδρομία 4x50μ. Επιφανείας με τον δεύτερο καλύτερο χρόνο στον απογευματινό τελικό, ενώ στο ατομικό της αγώνισμα κατέκτησε την 10η θέση και βρέθηκε για λίγο εκτός τελικού.</p>
+                  <p>Καλή επιτυχία σε όλα τα παιδιά! Τους αγώνες μπορείτε να τους παρακολουθήσετε <a href="https://www.youtube.com/live/tz5ZCOuJqRk?feature=share">εδω</a> </p>
+                    
+                
+                </div>
+              </div>
+          </div>   
+        </div>
+        
+        <div class="titlos-tmhmata">ΤΜΗΜΑΤΑ</div>
+        <div class="Tmhmata">
+         
+          <div id="t1">
+            <a href="https://kokalamarias.gr/kalamaria-klasikh"><img id="tmhmata-image" src="https://kokalamarias.gr/kok-images/klasikh-img.jpeg" alt="Κλασική Κολύμβηση Καλαμαριά"></a>
+              <h5>ΚΛΑΣΙΚΗ ΚΟΛΥΜΒΗΣΗ</h5>
+          </div>
+          <div id="t2">
+            <a href="https://kokalamarias.gr/kalamaria-texnikh.html"><img id="tmhmata-image" src="https://kokalamarias.gr/kok-images/texnikh-img.jpeg" alt="Τεχνική Κολύμβηση Καλαμαριά"></a>
+            <h5>ΤΕΧΝΙΚΗ ΚΟΛΥΜΒΗΣΗ</h5>
+            </div>
+        </div>
+
+        <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
+        <div class="news"> 
+
+          <div id="n1"><img src="./kok-images/european.jpg" id="news-image">
+            <div id="news-text">Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών.</div>
+            <button id="myBtn14" onclick=fun14()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal14" class="modal14">
+             <div class="modal-content14">
+                <span class="close14">&times;</span>
+                <div id="im">
+                 <img id="modal-image2" src="./kok-images/european.jpg">
+                </div>
+                <div id="modal-text">
                   <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">15/7/2023</p></h2>
                 
                   <p id="p1">Με 13 αθλητές και αθλήτριες αναχωρεί την Δευτέρα (17/7, 10.35) στη Βουδαπέστη, η Εθνική μας ομάδα Τεχνικής κολύμβησης Ανδρών – Γυναικών που θα μετάσχει (19-22 Ιουλίου) στο αντίστοιχο Ευρωπαϊκό πρωτάθλημα που διεξάγεται στην πόλη Γκόντολο (30χλμ από την ουγγρική πρωτεύουσα).</p>
@@ -540,26 +599,11 @@
                     </ul></p>
                     
                 
+             
                 </div>
               </div>
-          </div>   
-        </div>
-        
-        <div class="titlos-tmhmata">ΤΜΗΜΑΤΑ</div>
-        <div class="Tmhmata">
-         
-          <div id="t1">
-            <a href="https://kokalamarias.gr/kalamaria-klasikh"><img id="tmhmata-image" src="https://kokalamarias.gr/kok-images/klasikh-img.jpeg" alt="Κλασική Κολύμβηση Καλαμαριά"></a>
-              <h5>ΚΛΑΣΙΚΗ ΚΟΛΥΜΒΗΣΗ</h5>
-          </div>
-          <div id="t2">
-            <a href="https://kokalamarias.gr/kalamaria-texnikh.html"><img id="tmhmata-image" src="https://kokalamarias.gr/kok-images/texnikh-img.jpeg" alt="Τεχνική Κολύμβηση Καλαμαριά"></a>
-            <h5>ΤΕΧΝΙΚΗ ΚΟΛΥΜΒΗΣΗ</h5>
             </div>
-        </div>
-
-        <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
-        <div class="news"> 
+          </div>
 
            
           <div id="n1"><img src="https://kokalamarias.gr/kok-images/kalfidou-xryso.jpeg" alt="Καλφίδου Ελένη Παγκόσμια Πρωταθλήτρια" id="news-image">
