@@ -331,6 +331,27 @@
       </script>
        <script>
         document.addEventListener("DOMContentLoaded", function () {
+          var modal = document.getElementById("myModal16");
+          var btn = document.getElementById("myBtn16");
+          var span = document.getElementsByClassName("close16")[0];
+      
+          btn.onclick = function () {
+            modal.style.display = "block";
+          };
+      
+          span.onclick = function () {
+            modal.style.display = "none";
+          };
+      
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        });
+      </script>
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
           var modal = document.getElementById("myModalx");
           var btn = document.getElementById("myBtnx");
           var span = document.getElementsByClassName("closex")[0];
@@ -512,14 +533,14 @@
             </div>
         </nav>
         <div class="top-new"> 
-         <img src="./kok-images/if-pan-kalf-mar-pab.jpeg" id="topimg" alt="Παναγιωτίδης, Καλφίδης, Αρμουτσής, Τελιούση, Μπάπκας">
+         <img src="./kok-images/defteri-mera-paneuropaiko.jpg" id="topimg" alt="Παναγιωτίδης, Καλφίδης, Αρμουτσής, Τελιούση, Μπάπκας">
             <!--     <div class="slideshow-container">
                <img src="./kok-images/panagiotidis.jpg" alt="Παναγιωτίδης Γεώργιος">
                <img src="./kok-images/kalfidis.jpg" alt="Καλφίδης Ηλίας">
              <img src="./kok-images/telioush-paneuropaiko.jpg" alt="Τελιούση Ιφιγένεια">
            </div> -->
          
-            <div class="top-lezanda">ΠΑΝΕΥΡΩΠΑΙΚΟ ΠΡΩΤΑΘΛΗΜΑ ΑΝΔΡΩΝ/ΓΥΝΑΙΚΩΝ</div>
+            <div class="top-lezanda">Προκρίσεις και την δεύτερη μέρα στην Ουγγαρία. </div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
@@ -548,15 +569,14 @@
                 <span class="closetop">&times;</span>
                 <div id="imtop">
                 
-                  <img id="modal-image2" src="./kok-images/telioush-xryso-andrwn.jpeg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                  <img id="modal-image2" src="./kok-images/defteri-mera-paneuropaiko.jpg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
                 </div>
                 <div id="modal-top-text">
-                  <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">19/7/2023</p></h2>
+                  <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">20/7/2023</p></h2>
                 
-                  <p id="p1">Χρυσή η Τελιούση Ιφιγένεια με την σκυταλοδρομία 4x50μ. Επιφανείας Ανδρών/Γυναικών μαζί με τους Μυλωνάκης,Καλτσουκαλάς,Τσιγκόια.</p>
-                  <p>4ος ο Παναγιωτίδης Γεώργιος στον τελικό των 100μ. Επιφανείας Ανδρών! <br> 7ος ο Καλφίδης Ηλίας στα 400μ. Επιφανείας Ανδρών!</p>
-                  <p>Πολλά συγχαρητήρια στους αθλήτες/αθλήτριες μας καθώς και σε όλα τα παιδιά. Συγχαρητήρια επίσης και στους προπονητές της ομάδας Βίκη Τσίκλη και Μπάπκα Παύλο που για ακόμη μια φόρα είναι δίπλα στα παιδία και τα στηρίζουν έμπρακτα σε κάθες τους βήμα.</p>
-                  <p>Καλή σύνεχεια στις υπόλοιπες αγωνιστικές. Οι αγώνες συνεχίζονται αύριο Πέμπτη (20/07) <a href="https://www.youtube.com/live/dGsgfzpIPK8?feature=share">εδω</a> </p>
+                  <p id="p1"> Άλλη μια πολύ καλή εμφάνιση είχαν και σήμερα οι αθλητές και αθλήτριες της ομάδας μας στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών στην Ουγγαρία. </p>
+                  <p>Ο Παναγιωτίδης Γέωργιος προκρίθηκε στον απογευματινό τελικό των 100μ. υποβρύχιο Ανδρών με την τέταρτη καλύτερη επίδοση (ταυτόχρονη άφιξη με τον Τούρκο διεθνή Saydam Omer Faruk).<br>Ομοίως η Τελιούση Ιφιγένεια προκρίθηκε στα 200μ. Επιφανείας Γυναικών με τον 2η καλύτερη επίδοση (επίσης με ταυτόχρονη άφιξη με την διεθνή της Ουκρανίας Mkarenko Anastasia).</p>
+                  <p>Οι Αρμουτσής Μάριος και Καλφίδης Ηλίας, λόγω των υψηλών επιδόσεων τους στο αγώνισμα των 1500μ. Επιφανείας την φετινή χρονία, συμμετέχουν απευθείας το απόγευμα στην γρήγορη σειρά του αγωνίσματος. Καλή επιτυχία σε όλους! </p>
                     
                 
                 </div>
@@ -580,7 +600,33 @@
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news"> 
 
-          <div id="n1-top"><img src="./kok-images/ethnikh-andrwn-gynaikwn.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+          <div id="n1-top"><img src="./kok-images/if-pan-kalf-mar-pab.jpeg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+            <div id="news-text">Χρυσό μετάλλιο για την Τελιούση με την σκυταλοδρομία 4x50μ. Επιφανείας.</div>
+            <button id="myBtn16" onclick=fun14()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal16" class="modal16">
+             <div class="modal-content16">
+                <span class="close16">&times;</span>
+                <div id="im">
+                 <img id="modal-image2" src="./kok-images/telioush-xryso-andrwn.jpeg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                </div>
+                <div id="modal-text">
+                  <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">19/7/2023</p></h2>
+                
+                  <p id="p1">Χρυσή η Τελιούση Ιφιγένεια με την σκυταλοδρομία 4x50μ. Επιφανείας Ανδρών/Γυναικών μαζί με τους Μυλωνάκης,Καλτσουκαλάς,Τσιγκόια.</p>
+                  <p>4ος ο Παναγιωτίδης Γεώργιος στον τελικό των 100μ. Επιφανείας Ανδρών! <br> 7ος ο Καλφίδης Ηλίας στα 400μ. Επιφανείας Ανδρών!</p>
+                  <p>Πολλά συγχαρητήρια στους αθλήτες/αθλήτριες μας καθώς και σε όλα τα παιδιά. Συγχαρητήρια επίσης και στους προπονητές της ομάδας Βίκη Τσίκλη και Μπάπκα Παύλο που για ακόμη μια φόρα είναι δίπλα στα παιδία και τα στηρίζουν έμπρακτα σε κάθες τους βήμα.</p>
+                  <p>Καλή σύνεχεια στις υπόλοιπες αγωνιστικές. Οι αγώνες συνεχίζονται αύριο Πέμπτη (20/07) <a href="https://www.youtube.com/live/dGsgfzpIPK8?feature=share">εδω.</a> </p>
+                    
+                    
+                
+             
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="n1"><img src="./kok-images/ethnikh-andrwn-gynaikwn.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
             <div id="news-text">Προκρίσεις σε τελικούς στην πρώτη μέρα του Πανευρωπαϊκού πρωταθλήματος.</div>
             <button id="myBtn15" onclick=fun14()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal15" class="modal15">

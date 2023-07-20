@@ -95,7 +95,7 @@ body {
 
 
 
-#myBtn,#myBtn15,#myBtn14,#myBtn1,#myBtn2,#myBtnx,#myBtn3,#myBtn4,#myBtn5,#myBtn6,#myBtn7,#myBtn8,#mytopBtn {
+#myBtn,#myBtn16,#myBtn15,#myBtn14,#myBtn1,#myBtn2,#myBtnx,#myBtn3,#myBtn4,#myBtn5,#myBtn6,#myBtn7,#myBtn8,#mytopBtn {
   height: 50px;
   width: 10%;
   position: absolute;
@@ -113,7 +113,7 @@ body {
   width: 10%;
   margin-left: 30%;
 }
-.modal,.modal1,.modal15,.modal2,.modalx,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8,.modaltop,.modal14 {  
+.modal,.modal1,.modal16,.modal15,.modal2,.modalx,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8,.modaltop,.modal14 {  
   display: none; 
   position: fixed;
   z-index: 1; 
@@ -126,7 +126,7 @@ body {
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.8); 
 }
-.modal-content,.modal-content15,.modal-contentx,.modal-content1,.modal-content2,.modal-content3,.modal-content14,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8,.modal-contenttop {
+.modal-content,.modal-content16,.modal-content15,.modal-contentx,.modal-content1,.modal-content2,.modal-content3,.modal-content14,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8,.modal-contenttop {
   background-color: #fefefe;
   color: black;
   padding: 20px;
@@ -135,7 +135,7 @@ body {
   margin-left: 10%;
   height: 500px;
 }
-.close,.closex,.close1,.close15, .close2,.close3,.close4,.close5,.close6,.close7,.close14,.close8,.closetop {
+.close,.closex,.close1,.close15,.close16, .close2,.close3,.close4,.close5,.close6,.close7,.close14,.close8,.closetop {
   color: grey;
   float: right;
   font-size: 28px;
@@ -245,7 +245,7 @@ body {
   width: 100%;
   height: 230px;
   background: linear-gradient(to bottom, rgb(2, 2, 96), #08080f);
-  margin-top: 130%;
+  margin-top: 170%;
  
 }
 
@@ -302,6 +302,7 @@ body {
 #myBtnx:hover,
 #myBtn8:hover,
 #myBtn15:hover,
+#myBtn16:hover,
 #myBtn14:hover {
   opacity: 0.7;
 }
@@ -318,7 +319,8 @@ body {
 .closex:hover,
 .close15:hover,
 .closetop:hover,
-.close14:hover  {
+.close14:hover,
+.close16:hover  {
   color: black;
   cursor: pointer;
 }
@@ -622,16 +624,16 @@ body {
     margin-top: -20%;
     margin-left: 35%;
   }
-  .modal-content,.modal-content15,.modal-content14,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-contentx,.modal-content7,.modal-content8,.modal-contenttop {
+  .modal-content,.modal-content16,.modal-content15,.modal-content14,.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-contentx,.modal-content7,.modal-content8,.modal-contenttop {
     height: 1800px;
     width: 95%;
     margin-left: 2.5%;
     
   }
   #modal-image2 {
-    width: 90%;
+    width: 100%;
     height: 250px;
-    margin-left: 5%;
+    margin-left: 0%;
   }
   #modal-text {
     width: 100%;
@@ -690,7 +692,7 @@ body {
   #news-image {
     height: 200px ;
   }
-  #myBtn,#myBtn1,#myBtn15,#myBtn2,#myBtn14,#myBtn3,#myBtn4,#myBtn5,#myBtnx,#myBtn6,#myBtn7,#myBtn8{
+  #myBtn,#myBtn1,#myBtn16,#myBtn15,#myBtn2,#myBtn14,#myBtn3,#myBtn4,#myBtn5,#myBtnx,#myBtn6,#myBtn7,#myBtn8{
   
     width: 30%;
     height: 40px;
@@ -700,7 +702,7 @@ body {
 
   .xorhgoi {
     height: 300px;
-    margin-top: 1100%;
+    margin-top: 1180%;
   }
   #xorhgoi-image {
       height: 80px;
