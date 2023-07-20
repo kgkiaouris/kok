@@ -160,7 +160,7 @@ body {
 #modal-image2 { 
   width: 92%;
   height: 400px;
-  object-fit: contain;
+  object-fit: cover;
 }
 #modal-image {
   width: 92%;
@@ -634,12 +634,14 @@ body {
     width: 100%;
     height: 250px;
     margin-left: 0%;
+    object-fit: cover;
   }
   #modal-text {
     width: 100%;
   }
   #im,#imtop, #modal-top-text {
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
     height: 250px;
     margin-top: 0;
   }
