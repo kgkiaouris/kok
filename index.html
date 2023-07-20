@@ -500,6 +500,21 @@
                 }
               }
             });
+            function closeModalOnBackButton(event) {
+    // Check if the modal is open and the URL contains "#modal"
+    if (modal.style.display === "block" && window.location.hash === "#modal") {
+      closeModal();
+    }
+  }
+
+  // Event listeners
+  btn.addEventListener("click", openModal);
+  closeBtn.addEventListener("click", closeModal);
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
         </script>
         
     </head>
@@ -602,7 +617,7 @@
 
           <div id="n1-top"><img src="./kok-images/if-pan-kalf-mar-pab.jpeg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
             <div id="news-text">Χρυσό μετάλλιο για την Τελιούση με την σκυταλοδρομία 4x50μ. Επιφανείας.</div>
-            <button id="myBtn16" onclick=fun14()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <button id="myBtn16" onclick=fun16()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal16" class="modal16">
              <div class="modal-content16">
                 <span class="close16">&times;</span>
@@ -628,7 +643,7 @@
 
           <div id="n1"><img src="./kok-images/ethnikh-andrwn-gynaikwn.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
             <div id="news-text">Προκρίσεις σε τελικούς στην πρώτη μέρα του Πανευρωπαϊκού πρωταθλήματος.</div>
-            <button id="myBtn15" onclick=fun14()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <button id="myBtn15" onclick=fun15()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal15" class="modal15">
              <div class="modal-content15">
                 <span class="close15">&times;</span>
