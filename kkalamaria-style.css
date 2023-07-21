@@ -733,7 +733,7 @@ body {
   }
 
 }
-/*@keyframes appearSquare {
+@keyframes appearSquare {
     0% { opacity: 0; transform: scale(0.2); }
     100% { opacity: 1; transform: scale(1); }
   }
