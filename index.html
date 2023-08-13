@@ -546,6 +546,28 @@
       </script>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
+            var modal = document.getElementById("myModal39");
+            var btn = document.getElementById("myBtn39");
+            var span = document.getElementsByClassName("close39")[0];
+            
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          });
+          
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
             var modal = document.getElementById("myModal20");
             var btn = document.getElementById("myBtn20");
             var span = document.getElementsByClassName("close20")[0];
@@ -634,14 +656,14 @@
             </div>
         </nav>
         <div class="top-new"> 
-         <img src="./kok-images/european-laste.jpeg" id="topimg" alt="Παναγιωτίδης, Καλφίδης, Αρμουτσής, Τελιούση, Μπάπκας">
+         <img src="./kok-images/open-water-champs.jpg" id="topimg" alt="Παναγιωτίδης, Καλφίδης, Αρμουτσής, Τελιούση, Μπάπκας">
             <!--     <div class="slideshow-container">
                <img src="./kok-images/panagiotidis.jpg" alt="Παναγιωτίδης Γεώργιος">
                <img src="./kok-images/kalfidis.jpg" alt="Καλφίδης Ηλίας">
              <img src="./kok-images/telioush-paneuropaiko.jpg" alt="Τελιούση Ιφιγένεια">
            </div> -->
          
-            <div class="top-lezanda">3 νέα μετάλλια για τα αγόρια της Καλαμαριάς στην τελευταία αγωνιστική.</div>
+            <div class="top-lezanda">Πανελλήνιο Πρωτάθλημα Open Water Τεχνικής Κολύμβησης.</div>
             <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
            
           
@@ -670,14 +692,14 @@
                 <span class="closetop">&times;</span>
                 <div id="imtop">
                 
-                  <img id="modal-image2" src="./kok-images/european-laste.jpeg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                  <img id="modal-image2" src="./kok-images/open-water-champs2.jpeg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
                 </div>
                 <div id="modal-top-text">
-                  <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">22/7/2023</p></h2>
+                  <h2>Πανελλήνιο Πρωτάθλημα Open Water Τεχνικής Κολύμβησης.<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">02/08/2023</p></h2>
                 
-                  <p id="p1">Έπεσε η αυλαία στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών Γυναικών στην Ουγγαρία. Στους σημερινούς τελικούς πρωταγωνίστησαν τα αγόρια της Καλαμαριάς!   </p>
-                  <p>Ο Παναγιωτίδης Γιώργος κατέκτησε το ασημένιο μετάλλιο στα 50μ. Άπνοια.<br>  Επίσης μαζί με τον Αρμουτση Μάριο συμμετείχαν στην σκυταλοδρομία 4x100m. Επιφάνειας και κατέκτησαν την δεύτερη  θέση και άλλο ένα ασημένιο μετάλλιο.</p>
-                  <p>Τέλος ο Καλφίδης Ηλίας συμμετείχε στην γρήγορη σειρά των 800μμ Επιφάνειας και κατέκτησε την 7η θέση στην Ευρώπη.<br>Πολλά συγχαρητήρια σε όλα τα παιδιά, καθώς και σε όλη την ελληνική αποστολή! </p>
+                  <p id="p1">Ο ΚΟ Καλαμαριάς αναδείχθηκε πολυνίκης στο Πανελλήνιο πρωτάθλημα Μεγάλων Αποστάσεων (Open Water) Τεχνικής Κολύμβησης Ανδρών - Γυναικών, που ολοκληρώθηκε το απόγευμα της Τετάρτης (2/8) στην Παραλία της Αρετσούς στην Καλαμαριά Θεσσαλονίκης.</p>
+                  <p>Ο σύλλογος της Καλαμαριάς, που ήταν και οικοδεσπότης τη διοργάνωσης, πρώτευσε στη Γενική Βαθμολογία Open (Ανδρών - Γυναικών), αλλά και στις επιμέρους των Ανδρών και των Γυναικών.</p> <p>  Την πρωτιά και στη γενική βαθμολογία Κατηγοριών, αλλά και στην επιμέρους Νεανίδων - Κορασίδων πήρε επίσης ο ΚΟ Καλαμαριάς, ενώ στη βαθμολογίες Παίδων - Εφήβων πρώτευσε ο ΠΑΣ Γιάννενα.</p>
+                  
                     
                 
                 </div>
@@ -701,7 +723,31 @@
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news"> 
 
-          <div id="n1-top"><img src="./kok-images/european-last.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+          <div id="n1-top"><img src="./kok-images/european-laste.jpeg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+            <div id="news-text">3 νέα μετάλλια για τα αγόρια της Καλαμαριάς στην τελευταία αγωνιστική.</div>
+            <button id="myBtn39" onclick=fun39()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal39" class="modal39">
+             <div class="modal-content39">
+                <span class="close39">&times;</span>
+                <div id="im">
+                 <img id="modal-image2" src="./kok-images/european-laste.jpeg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                </div>
+                <div id="modal-text">
+                  <h2>Πανευρωπαϊκό Πρωτάθλημα Ανδρών/Γυναικών<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">22/7/2023</p></h2>
+                
+                  <p id="p1">Έπεσε η αυλαία στο Πανευρωπαϊκό Πρωτάθλημα Ανδρών Γυναικών στην Ουγγαρία. Στους σημερινούς τελικούς πρωταγωνίστησαν τα αγόρια της Καλαμαριάς!   </p>
+                  <p>Ο Παναγιωτίδης Γιώργος κατέκτησε το ασημένιο μετάλλιο στα 50μ. Άπνοια.<br>  Επίσης μαζί με τον Αρμουτση Μάριο συμμετείχαν στην σκυταλοδρομία 4x100m. Επιφάνειας και κατέκτησαν την δεύτερη  θέση και άλλο ένα ασημένιο μετάλλιο.</p>
+                  <p>Τέλος ο Καλφίδης Ηλίας συμμετείχε στην γρήγορη σειρά των 800μμ Επιφάνειας και κατέκτησε την 7η θέση στην Ευρώπη.<br>Πολλά συγχαρητήρια σε όλα τα παιδιά, καθώς και σε όλη την ελληνική αποστολή! </p>
+                    
+                
+             
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <div id="n1"><img src="./kok-images/european-last.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
             <div id="news-text">Προκρίσεις και στην τελευταία μέρα του Πανευρωπαϊκού Πρωταθλήματος.</div>
             <button id="myBtn19" onclick=fun18()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal19" class="modal19">
