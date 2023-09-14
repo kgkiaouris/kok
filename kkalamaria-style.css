@@ -585,7 +585,6 @@ body {
     margin-top: 0;
   }
   #name {
-    visibility: hidden;
       color: white;
     padding: 0;
     margin-top: 2%;
@@ -724,7 +723,7 @@ body {
 
   .xorhgoi {
     height: 300px;
-    margin-top: 1650%;
+    margin-top: 1700%;
   }
   #xorhgoi-image {
       height: 80px;
