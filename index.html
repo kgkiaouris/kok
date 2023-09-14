@@ -415,6 +415,27 @@
     };
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var modal = document.getElementById("myModal40");
+    var btn = document.getElementById("myBtn40");
+    var span = document.getElementsByClassName("close40")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
+</script>
 
       <script>
           document.addEventListener("DOMContentLoaded", function () {
@@ -656,7 +677,7 @@
             </div>
         </nav>
         <div class="top-new"> 
-         <img src="./kok-images/open-water-champs.jpg" id="topimg" alt="Παναγιωτίδης, Καλφίδης, Αρμουτσής, Τελιούση, Μπάπκας">
+         <img src="./kok-images/med.beach.games.jpg" id="topimg" alt="Παναγιωτίδης, Καλφίδης, Αρμουτσής, Τελιούση, Μπάπκας">
             <!--     <div class="slideshow-container">
                <img src="./kok-images/panagiotidis.jpg" alt="Παναγιωτίδης Γεώργιος">
                <img src="./kok-images/kalfidis.jpg" alt="Καλφίδης Ηλίας">
@@ -692,13 +713,15 @@
                 <span class="closetop">&times;</span>
                 <div id="imtop">
                 
-                  <img id="modal-image2" src="./kok-images/open-water-champs2.jpeg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                  <img id="modal-image2" src="./kok-images/med.beach.games2.jpg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
                 </div>
                 <div id="modal-top-text">
-                  <h2>Πανελλήνιο Πρωτάθλημα Open Water Τεχνικής Κολύμβησης.<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">02/08/2023</p></h2>
+                  <h2>Πανελλήνιο Πρωτάθλημα Open Water Τεχνικής Κολύμβησης.<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">14/09/2023</p></h2>
                 
-                  <p id="p1">Ο ΚΟ Καλαμαριάς αναδείχθηκε πολυνίκης στο Πανελλήνιο πρωτάθλημα Μεγάλων Αποστάσεων (Open Water) Τεχνικής Κολύμβησης Ανδρών - Γυναικών, που ολοκληρώθηκε το απόγευμα της Τετάρτης (2/8) στην Παραλία της Αρετσούς στην Καλαμαριά Θεσσαλονίκης.</p>
-                  <p>Ο σύλλογος της Καλαμαριάς, που ήταν και οικοδεσπότης τη διοργάνωσης, πρώτευσε στη Γενική Βαθμολογία Open (Ανδρών - Γυναικών), αλλά και στις επιμέρους των Ανδρών και των Γυναικών.</p> <p>  Την πρωτιά και στη γενική βαθμολογία Κατηγοριών, αλλά και στην επιμέρους Νεανίδων - Κορασίδων πήρε επίσης ο ΚΟ Καλαμαριάς, ενώ στη βαθμολογίες Παίδων - Εφήβων πρώτευσε ο ΠΑΣ Γιάννενα.</p>
+                  <p id="p1">Ξεκίνησε σήμερα η Τεχνική Κολύμβηση στους Μεσογειακούς Παράκτιους Αγώνες στο Ηράκλειο.</p>
+                  <p>Στους σημερινούς προκριματικούς αγώνες συμμετείχαν και οι τέσσερις αθλητές της ομάδας.</p>
+                  <p>Ο Παναγιωτίδης Γεώργιος πέρασε με την 4η καλύτερη επίδοση στον απογευματινό τελικό των 100μ. Επιφανείας. <br> Η Τελιούση Ιφιγένεια πέρασε με την 2η καλύτερη επίδοση στον απογευματινό τελικό των 200μ. Επιφανείας. <br> Τέλος οι αθλητές μας Αρμουτσής Μάριος και Καλφίδης Ηλίας προκρίθηκαν στον απογευματινό τελικό των 400μ. Επιφανείας με την 2η και 3η καλύτερη επίδοση αντίστοιχα.</p>
+                  <p>Οι απογευματινοί τελικοί θα μεταδοθούν απευθείας από την ΕΡΤ. Καλή επιτυχία σε όλα τα παιδιά.</p>
                   
                     
                 
@@ -723,7 +746,31 @@
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news"> 
 
-          <div id="n1-top"><img src="./kok-images/european-laste.jpeg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+          <div id="n1-top"><img src="./kok-images/open-water-champs.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+            <div id="news-text">Πανελλήνιο Πρωτάθλημα Open Water Τεχνικής Κολύμβησης.</div>
+            <button id="myBtn40" onclick=fun40()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal40" class="modal40">
+             <div class="modal-content40">
+                <span class="close40">&times;</span>
+                <div id="im">
+                 <img id="modal-image2" src="./kok-images/open-water-champs2.jpeg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                </div>
+                <div id="modal-text">
+                  <h2>Πανελλήνιο Πρωτάθλημα Open Water Τεχνικής Κολύμβησης.<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">02/08/2023</p></h2>
+                
+                  <p id="p1">Ο ΚΟ Καλαμαριάς αναδείχθηκε πολυνίκης στο Πανελλήνιο πρωτάθλημα Μεγάλων Αποστάσεων (Open Water) Τεχνικής Κολύμβησης Ανδρών - Γυναικών, που ολοκληρώθηκε το απόγευμα της Τετάρτης (2/8) στην Παραλία της Αρετσούς στην Καλαμαριά Θεσσαλονίκης.</p>
+                  <p>Ο σύλλογος της Καλαμαριάς, που ήταν και οικοδεσπότης τη διοργάνωσης, πρώτευσε στη Γενική Βαθμολογία Open (Ανδρών - Γυναικών), αλλά και στις επιμέρους των Ανδρών και των Γυναικών.</p> <p>  Την πρωτιά και στη γενική βαθμολογία Κατηγοριών, αλλά και στην επιμέρους Νεανίδων - Κορασίδων πήρε επίσης ο ΚΟ Καλαμαριάς, ενώ στη βαθμολογίες Παίδων - Εφήβων πρώτευσε ο ΠΑΣ Γιάννενα.</p>
+                  
+                
+             
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div id="n1"><img src="./kok-images/european-laste.jpeg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
             <div id="news-text">3 νέα μετάλλια για τα αγόρια της Καλαμαριάς στην τελευταία αγωνιστική.</div>
             <button id="myBtn39" onclick=fun39()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal39" class="modal39">
