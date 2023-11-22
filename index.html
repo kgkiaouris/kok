@@ -73,7 +73,7 @@
 }
       </style>
       <script>
-        function funtop(){
+       /* function funtop(){
                 var modal = document.getElementById("myModaltop");
                 var btn = document.getElementById("mytopBtn");
                 var span = document.getElementsByClassName("closetop")[0];
@@ -88,7 +88,7 @@
                      modal.style.display = "none";
                    }
                 }
-            }
+            } */
           function fun(){
                 var modal = document.getElementById("myModal");
                 var btn = document.getElementById("myBtn");
@@ -631,6 +631,28 @@
       </script>
       <script>
         document.addEventListener("DOMContentLoaded", function () {
+            var modal = document.getElementById("myModal22_11");
+            var btn = document.getElementById("myBtn22_11");
+            var span = document.getElementsByClassName("close22_11")[0];
+            
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          });
+          
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
             var modal = document.getElementById("myModal20");
             var btn = document.getElementById("myBtn20");
             var span = document.getElementsByClassName("close20")[0];
@@ -719,15 +741,17 @@
             </div>
         </nav>
         <div class="top-new"> 
-         <img src="./kok-images/world-openwater.jpg" id="topimg" alt="Παναγιωτίδης, Καλφίδης, Αρμουτσής, Τελιούση, Μπάπκας">
+         <img src="./kok-images/masters-xeimerino.jpg" style="object-fit: contain;"  id="topimg" alt="Παναγιωτίδης, Καλφίδης, Αρμουτσής, Τελιούση, Μπάπκας">
+
             <!--     <div class="slideshow-container">
                <img src="./kok-images/panagiotidis.jpg" alt="Παναγιωτίδης Γεώργιος">
                <img src="./kok-images/kalfidis.jpg" alt="Καλφίδης Ηλίας">
              <img src="./kok-images/telioush-paneuropaiko.jpg" alt="Τελιούση Ιφιγένεια">
-           </div> -->
+           </div> <button id="mytopBtn"  onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button> -->
          
-            <div class="top-lezanda">Παγκόσμιο Πρωτάθλημα OW Ανδρών/Γυναικών και Νέων/Νεανίδων.</div>
-            <button id="mytopBtn" onclick=funtop()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div class="top-lezanda" style="visibility: hidden;">Οι πρώτοι Πανελλήνιοι αγώνες Masters Τεχνικής Κολύμβησης.</div>
+            <a id="mytoBtn" style="padding-top: 10px;" href="https://koe.org.gr/article/idiki-prokiruxi-panellinion-xeimerinon-agonon-veteranon-texnikis-kolumvisis-ioannina-10-11-02-2024">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+           
            
           
         <!--  <script>
@@ -755,15 +779,13 @@
                 <span class="closetop">&times;</span>
                 <div id="imtop">
                 
-                  <img id="modal-image2" src="./kok-images/world-openwater.jpg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                  <img id="modal-image2" src="./kok-images/masters-xeimerino.jpg" style="object-fit: contain;" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
                 </div>
                 <div id="modal-top-text">
-                  <h2>Παγκόσμιο Πρωτάθλημα OW Ανδρών/Γυναικών και Νέων/Νεανίδων.<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">25/09/2023</p></h2>
+                  <h2>Οι πρώτοι Πανελλήνιοι αγώνες Masters Τεχνικής Κολύμβησης.<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">22/11/2023</p></h2>
                 
-                  <p id="p1">Πολυ δυναμικά ξεκίνησαν οι αθλητές μας στο Παγκόσμιο Πρωτάθλημα Open Water Τεχνικής Κολύμβησης!</p>
-                  <p>Η Καλφίδου Ελένη κατέκτησε ακόμα ένα χρυσό μετάλλιο για φέτος αυτή την φορά στα 1000μ. Επιφανείας Νεανίδων. <br> Στο ίδιο αγώνισμα η Μπουσδούκη Αφροδίτη στο πρώτο της βάπτισμα με τα χρώματα της εθνικής τερμάτισε στην 19η θέση.</p>
-                  <p>Ο Αρμουτσής Μάριος προσέθεσε ένα ακόμα μετάλλιο στην συλλογή του καθώς τερμάτισε 3ος στα 1000μ. Επιφανείας Ανδρών. <br> Στο ίδιο αγώνισμα ο αθλητής μας Νικολαΐδης Βαγγέλης κατέκτησε την 6η θέση. </p>
-                  <p>Πολλά συγχαρητήρια σε όλους, για ακόμη μια φορά μας κάνετε περήφανους !</p>
+                  <p id="p1">Η ΚΟΕ ανακοίνωσε μέσω προκηρύξεων σήμερα τους 1ους Πανελλήνιους Αγώνες Masters Τεχνικής Κολύμβησης οι οποίοι θα γίνουν μαζί με τους Πανελλήνιους Χειμερινούς Αγώνες Τεχνικής Κολύμβησης στα Ιωάννινα.</p>
+            
                   
                     
                 
@@ -788,7 +810,32 @@
         <div class="titlos-nea">ΤΑ ΝΕΑΣ ΜΑΣ</div>
         <div class="news"> 
 
-          <div id="n1-top"><img src="./kok-images/mesogeiakoi-medals.jpg" id="news-image" alt="Παράκτιοι Μεσογειακοί αγώνες Τεχνικής Κολύμβησης.">
+          <div id="n1-top"><img src="./kok-images/world-openwater.jpg" id="news-image" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+            <div id="news-text">Παγκόσμιο Πρωτάθλημα OW Ανδρών/Γυναικών και Νέων/Νεανίδων.</div>
+            <button id="myBtn22_11" onclick=fun22_11()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
+            <div id="myModal22_11" class="modal22_11">
+             <div class="modal-content22_11">
+                <span class="close22_11">&times;</span>
+                <div id="im">
+                 <img id="modal-image2" src="./kok-images/world-openwater.jpg" alt="Πανευρωπαϊκό πρωτάθλημα Τεχνικης Κολύμβησης">
+                </div>
+                <div id="modal-text">
+                  <h2>Παγκόσμιο Πρωτάθλημα OW Ανδρών/Γυναικών και Νέων/Νεανίδων.<p style="font-size: 13px;font-weight: bold;padding-top: 5px;">25/09/2023</p></h2>
+                
+                  <p id="p1">Πολυ δυναμικά ξεκίνησαν οι αθλητές μας στο Παγκόσμιο Πρωτάθλημα Open Water Τεχνικής Κολύμβησης!</p>
+                  <p>Η Καλφίδου Ελένη κατέκτησε ακόμα ένα χρυσό μετάλλιο για φέτος αυτή την φορά στα 1000μ. Επιφανείας Νεανίδων. <br> Στο ίδιο αγώνισμα η Μπουσδούκη Αφροδίτη στο πρώτο της βάπτισμα με τα χρώματα της εθνικής τερμάτισε στην 19η θέση.</p>
+                  <p>Ο Αρμουτσής Μάριος προσέθεσε ένα ακόμα μετάλλιο στην συλλογή του καθώς τερμάτισε 3ος στα 1000μ. Επιφανείας Ανδρών. <br> Στο ίδιο αγώνισμα ο αθλητής μας Νικολαΐδης Βαγγέλης κατέκτησε την 6η θέση. </p>
+                  <p>Πολλά συγχαρητήρια σε όλους, για ακόμη μια φορά μας κάνετε περήφανους !</p>
+                  
+                
+             
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="n1"><img src="./kok-images/mesogeiakoi-medals.jpg" id="news-image" alt="Παράκτιοι Μεσογειακοί αγώνες Τεχνικής Κολύμβησης.">
             <div id="news-text">Μεσογειακοί Παράκτιοι αγώνες Τεχνικής Κολύμβησης.</div>
             <button id="myBtn42" onclick=fun42()>ΠΕΡΙΣΣΟΤΕΡΑ</button>
             <div id="myModal42" class="modal42">
