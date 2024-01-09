@@ -9,7 +9,96 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     
+      <style>
+      
+            .surface, .immersion, .apnea, .bifins {
+                width: 70%;
+                margin-left: 15%;
+                height: 300px;
+                border-bottom: 1px solid black;
+            }
+            #img {
+                width: 30%;
+                float: left;
+                height: 250px;
+            }
+            #text {
+                width: 70%;
+                float: left;
+                height: 250px;
+            }
+            #agwnismata {
+                object-fit: cover;
+                width: 100%;
+                margin-top: 50px;
+                height: 200px;
+            }
+            #text h1,p {
+                padding: 25px;
+            }
+          
+            @media screen and (max-width: 600px) {
+                .surface, .immersion, .apnea, .bifins {
+                    width: 98%;
+                    margin-left: 1%;
+                    height: 400px;
+                    border: 0;
+                    margin-top: 18%;
+                    
+                }
+                #img {
+                    width: 90%;
+                    margin-left: 5%;
+                    height: 200px;
+                }
+                #text {
+                    width: 90%;
+                    margin-left: 5%;
+                    height: 200px;
+                }
+                #agwnismata {
+                    margin-top: 0;
+                    height: 190px;
+                }
+                #text h1,p {
+                padding: 0px;
+            }
+
+            }
+            @keyframes moveInverseeR {
+              0% { transform: translateX(-180%); }
+              100% { transform: translateX(0); }
+            }
+  
+            .surface {
+                animation: moveInverseeR 1.5s ease-in-out;
+            }
+            @keyframes moveInverseR {
+              0% { transform: translateX(180%); }
+              100% { transform: translateX(0); }
+            }
+  
+            .immersion {
+                animation: moveInverseR 1.5s ease-in-out;
+            }
+            @keyframes moveInverseeRΡΡ {
+              0% { transform: translateX(-180%); }
+              100% { transform: translateX(0); }
+            }
+  
+            .apnea {
+                animation: moveInverseeRΡΡ 4s ease-in-out;
+            }
+            @keyframes moveInverseRww {
+              0% { transform: translateX(180%); }
+              100% { transform: translateX(0); }
+            }
+  
+            .bifins {
+                animation: moveInverseRww 4s ease-in-out;
+            }
+
+        </style>
     </head>
    <body>
       <nav class="navbar navbar-inverse">
@@ -41,84 +130,41 @@
         </div>
     </nav>
 
-    <div class="head"><h1>Τεχνική Κολύμηση</h1></div>
-  <div class="center">
-    <div class="c1">
-      <div class="slideshow-container">
-        <img src="https://kokalamarias.gr/kok-images/finswim1.jpg">
-        <img src="https://kokalamarias.gr/kok-images/finswim2.jpg">       
-        <img src="https://kokalamarias.gr/kok-images/finswim3.jpg">
-        <img src="https://kokalamarias.gr/kok-images/finswim4.jpg">
-      </div>
-    
-    </div>
-    <script>
-      // Function to create the smooth slideshow
-    function startSlideshow() {
-        var slideshowImages = document.querySelectorAll('.slideshow-container img');
-        var currentImageIndex = 0;
-        var totalImages = slideshowImages.length;
-        
-        // Display the initial image
-        slideshowImages[currentImageIndex].style.opacity = '1';
-        
-        // Function to transition between images
-        function transitionSlides() {
-            // Fade out the current image
-            slideshowImages[currentImageIndex].style.opacity = '0';
-            
-            // Move to the next image
-            currentImageIndex = (currentImageIndex + 1) % totalImages;
-            
-            // Fade in the next image
-            slideshowImages[currentImageIndex].style.opacity = '1';
-        }
-        
-        // Start the slideshow and transition between images every 4 seconds
-        setInterval(transitionSlides, 3000);
-    }
-    
-    // Call the function to start the slideshow
-    startSlideshow();
-    </script>
-    
-    <div class="c2">
-      <h3>Η ομάδα του κολυμβητικού ομίλου καλαμαρίας πρωταγωνιστεί στην Τεχνική Κολύμβηση εγχώρια και στο εξωτερικό με αθλητές στην εθνική ομάδα.</h2>   
-        <h3>Η Τεχνική κολύμβηση είναι ένα νέο σχετικά άθλημα, στο οποίο οι αθλητές αφού προσαρμόσουν πτερύγια στα πόδια τους, έχουν τεντωμένα τα χέρια τους πάνω από το κεφάλι ώστε να πετύχουν υψηλές ταχύτητες κατά την κολύμβησή τους. </h2>
-        <h3>Διάφορες αποστάσεις και διαφορετικά είδη πτερυγίων και εξαρτημάτων όπως μάσκες  αναπνευστήρες και φιάλες συμπιεσμένου αέρα, χρησιμοποιούνται στους αγώνες κολύμβησης. Τα τελευταία χρόνια πολλά παιδιά προσελκύονται από την ταχύτητα που προσδίδουν τα πτερύγια μέσα στο νερό και εγγράφονται σε ομίλους τεχνικής κολύμβησης , ώστε να ασχοληθούν και αγωνιστικά με το άθλημα.</h2>
-    </div>
-
-    <div class="c3">
-      <h2>Τα αγωνίσματα για τους άνδρες και τις γυναίκες είναι:</h2>
-       <h2>-50μ Άπνοη (κολύμβηση 50μ χωρίς αναπνοή και κάτω από την επιφάνεια του νερού).</h2> 
-       <h2>-100 και 400μ Υποβρύχιο (κολύμβηση κάτω από την επιφάνεια του νερού με τη χρήση ειδικής φιάλης με συμπιεσμένο αέρα, ρυθμιστή και συγκεκριμένου τύπου μονοπέδιλο).</h2> 
-       <h2>-50, 100, 200, 400, 800 και 1500μ Επιφάνειας (κολύμβηση στην επιφάνεια του νερού με τη χρήση αναπνευστήρα και συγκεκριμένου τύπου μονοπέδιλο).</h2>
-       <h2>-50, 100, 200, 400μ Μπιφιν (Ελεύθερο κολύμπι με τη χρήση αναπνευστήρα και διπλά πέδιλα).</h2>
-    </div>
-    <div class="c4">
-      <div class="column">
-        <img src="https://kokalamarias.gr/kok-images/immserion.jpg" alt="Κοκ Τεχνική Κολύμβηση">
-        <div class="text">Υποβρύχιο</div>
-      </div>
-      <div class="column">
-          <img src="https://kokalamarias.gr/kok-images/surface.jpg" alt="Κοκ Τεχνική Κολύμβηση">
-          <div class="text">Επιφάνεια</div>
-      </div>
-      <div class="column">
-          <img src="https://kokalamarias.gr/kok-images/bifins.jpeg" alt="Κοκ Τεχνική κολύμβηση">
-        <div class="text">Μπιφίνς</div>
-      </div>
-    </div>
-  </div>
+    <div class="kok">
+            <div class="surface">
+                <div id="img">
+                    <img id="agwnismata" src="https://kokalamarias.gr/kok-images/surfacev2.jpg">
+                </div>
+                <div id="text"><h1>Επιφάνεια</h1><p>Ο αθλητής κολυμπά χρησιμοποιώντας ένα μονοπέδιλο, σε ένα στυλ που θυμίζει την κίνηση των δελφινιών. Η χρήση ενός αναπνευστήρα για την αναπνοή επιτρέπει στο σώμα να έχει μια τέλεια υδροδυναμική θέση.Είναι ένα εντυπωσιακό στυλ κολύμβησης λόγω των ταχυτήτων που επιτυγχάνονται, κοντά στα 11 χμλ/ώρα.</p></div>
+            </div>
+            <div class="immersion">
+                <div id="img">
+                    <img id="agwnismata" src="https://kokalamarias.gr/kok-images/immersionv2.webp">
+                </div>
+                <div id="text"><h1>Υποβρύχιο</h1><p>Ο αθλητής κολυμπά υποβρύχια με ένα μονοπέδιλο χρησιμοποιώντας ένα μικρό δοχείο με συμπιεσμένο αέρα. Τα υποβρύχια αγωνίσματα απαιτούν υψηλή τεχνική εξειδίκευση. Οι ταχύτητες που επιτυγχάνονται είναι υψηλότερες από εκείνες των αγωνισμάτων επιφάνειας.</p></div>
+            </div>
+            <div class="apnea">
+                <div id="img">
+                    <img id="agwnismata" src="https://kokalamarias.gr/kok-images/apnea.webp">
+                </div>
+                <div id="text"><h1>Απνοια</h1><p>Αυτό είναι ένα αγώνισμα μιας αναπνοής. Ο αθλητής κολυμπά με μονοπέδιλο υποβρύχια σε απόσταση 50 μέτρων. Πρόκειται για το πιο γρήγορο στυλ, με ταχύτητες που φτάνουν τα 13 χλμ/ώρα.</p></div>
+            </div>
+            <div class="bifins">
+                <div id="img">
+                    <img id="agwnismata" src="https://kokalamarias.gr/kok-images/bifinsv2.webp">
+                </div>
+                <div id="text"><h1>Bifins</h1><p>Τα αγωνίσματα με διπλά πέδιλα εισήχθησαν στο επίσημο πρόγραμμα το 2006. Το στυλ κολύμβησης είναι αυτό της κλασικής crawl , αλλά οι ταχύτητες που επιτυγχάνονται είναι σημαντικά μεγαλύτερες από αυτές της κλασικής κολύμβησης.</p></div>
+            </div>
+        </div>
   
 
     <div class="xorhgoi">
           <div class="bottom">
             <div id="b1"><b>ΕΠΙΚΟΙΝΩΝΙΑ</b> <br>Κολυμβητικός Όμιλος Καλαμαριάς, Θεσσαλονίκη <br> Τηλ. 698 641 2401 <br> Email: kkalamarias@gmail.com</div>
-            <div id="b3"><b>ΩΡΑΡΙΟ ΛΕΙΤΟΥΡΓΙΑΣ </b><br> Καθημερινά: 18:00-19:15 (προαγωνιστικά) <br> Καθημερινά 19:00-21:00 (αγωνιστική)</div>
+            <div id="b3"><b>ΩΡΑΡΙΟ ΛΕΙΤΟΥΡΓΙΑΣ </b><br> Καθημερινά: 18:00-19:15 (προαγωνιστικά) <br> Καθημερινά 19:00-21:00 (αγωνιστική) <br> Καθημερινά 14:00-16:00 (Ποσειδώνιο)</div>
           </div>  
          
-          <div id="xor1"><img src="https://kokalamarias.gr/revoil.png" id="xorhgoi-image"></div>
+          <div id="xor1"><a href="https://www.eshop-spot.com/?gclid=Cj0KCQiAy9msBhD0ARIsANbk0A-IRKZeDj0w7eGzxZ5D16iOAFy5it_4lsTzpzb5wlD_Ug2g1woqznoaAnGeEALw_wcB"> <img src="https://kokalamarias.gr/kok-images/eshop-spot-logotypo.png" id="xorhgoi-image"></a></div>
         </div>
     </body>
 </html>
