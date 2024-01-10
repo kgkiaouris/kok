@@ -19,10 +19,13 @@ body {
  .navbar-nav {
   float: right;
   margin-right: 200px;
+  border: none;
+
  }
  #myNavbar {
   padding-top: 15px;
-
+  
+  
  }
  #myNavbar a {
   color: white;
@@ -575,7 +578,7 @@ body {
 
   body {
    width: 100%;
-   border: 15px solid rgb(1, 1, 57);
+   border: 12px solid rgb(1, 1, 57);
    height: 100%;
    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
    background-attachment: fixed;
@@ -592,9 +595,11 @@ body {
   #myNavbar {
     background-color: rgb(1, 1, 57);
     margin-top: 0;
+    width: 115%;
+    margin-left: -7%;
   }
   #name {
-      color: white;
+    color: white;
     padding: 0;
     margin-top: 2%;
     margin-left: -10%;
@@ -607,6 +612,8 @@ body {
   .navbar-nav {
     float: left;
     margin-right: 0;
+    border: none;
+
   }
   .navbar-brand {
     width: 40%;
@@ -656,9 +663,9 @@ body {
     
   }
   #modal-image2 {
-    width: 100%;
+    width: 97%;
     height: 250px;
-    margin-left: 0%;
+    margin-left: 1.5%;
     object-fit: cover;
   }
   #modal-text {
@@ -732,7 +739,7 @@ body {
 
   .xorhgoi {
     height: 300px;
-    margin-top: 1950%;
+    margin-top: 2050%;
   }
   #xorhgoi-image {
       height: 80px;
