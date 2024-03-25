@@ -222,6 +222,9 @@ h2 {
         width: 100%;
         margin-left: 0;
     }
+    #pipes {
+      width: 170%;
+    }
     .swim1 {
         width: 55%;
         border: none;
