@@ -1,5 +1,5 @@
   body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ body {
  width: 100%;
  border: 12px solid rgb(1, 1, 57);
  height: 100%;
- background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU);
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSS_YJ8jz7N2nFBIY1IsUZQzsUFwaoAhsPvQ&usqp=CAU");
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
